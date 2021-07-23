@@ -20,7 +20,7 @@ class M_Home extends CI_Model {
     }
 
     public function getMenuKuliner() {
-        $query = "SELECT `kuliner`.`menu` FROM kuliner";
+        $query = "SELECT menu FROM kuliner";
         return $this->db->query($query)->result_array();
     }
 

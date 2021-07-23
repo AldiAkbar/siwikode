@@ -64,6 +64,7 @@ $route['admin/user']                 	= 'admin/User_Management/index';
 $route['admin/artikel'] 				= 'admin/Artikel/index';
 $route['admin/kuliner'] 				= 'admin/Kuliner/index';
 $route['admin/rekreasi'] 				= 'admin/Rekreasi/index';
+$route['admin/testimoni']               = 'admin/Testimoni/index';
 
 
 

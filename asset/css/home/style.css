@@ -278,7 +278,7 @@ a:hover.back-to-top {
     padding-bottom: 40px;
 }
 
-.article-header p{
+.article-header {
     text-indent: 20px;
     color:rgb(105, 102, 102); 
     font-weight: 500;
@@ -379,6 +379,7 @@ a:hover.back-to-top {
 
 /*single-package-item */
 .single-package-item{
+    height: 570px;
     margin-bottom: 30px;
     padding-bottom: 20px;
     box-shadow: 0 0 20px rgba(0,0,0,.1);
@@ -424,13 +425,11 @@ a:hover.back-to-top {
 .packages-para p{
     font-size: 14px;
     color: #aaa;
+    min-height: 20px;
     font-family: 'Montserrat', sans-serif;
     margin-bottom:15px;
 }
-.packages-para p span{
-    display: inline-block;
-    width: 150px;
-}
+
 .packages-review p i{
     color: #ffdf00;
     font-size: 16px;

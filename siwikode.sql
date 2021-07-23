@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 01, 2021 at 07:10 AM
+-- Generation Time: Jul 22, 2021 at 02:30 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -94,14 +94,14 @@ INSERT INTO `jenis_kuliner` (`id`, `jenis`) VALUES
 
 CREATE TABLE `jenis_rekreasi` (
   `id` int(11) NOT NULL,
-  `name` varchar(128) NOT NULL
+  `jenis` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `jenis_rekreasi`
 --
 
-INSERT INTO `jenis_rekreasi` (`id`, `name`) VALUES
+INSERT INTO `jenis_rekreasi` (`id`, `jenis`) VALUES
 (1, 'Taman Hiburan / Taman Bermain'),
 (2, 'Tempat ibadah'),
 (3, 'Taman Wisata'),
@@ -404,7 +404,10 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 (17, 3, 'Write Article', 'writer/artikel', 'fas fa-fw fa-book', 1),
 (19, 1, 'Article Management', 'admin/artikel', 'fas fa-fw fa-book', 1),
 (20, 1, 'Kuliner Management', 'admin/kuliner', 'fas fa-fw fa-utensils', 1),
-(21, 3, 'Write Kuliner', 'writer/kuliner', 'fas fa-fw fa-drumstick-bite', 1);
+(21, 3, 'Write Kuliner', 'writer/kuliner', 'fas fa-fw fa-drumstick-bite', 1),
+(22, 1, 'Rekreasi Management', 'admin/rekreasi', 'fas fa-fw fa-mountain', 1),
+(23, 3, 'Write Rekreasi', 'writer/rekreasi', 'fas fa-fw fa-campground', 1),
+(24, 1, 'Testimoni Management', 'admin/testimoni', 'fas fa-fw fa-user-edit', 1);
 
 -- --------------------------------------------------------
 
@@ -648,7 +651,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `user_token`

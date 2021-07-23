@@ -1,5 +1,5 @@
-     <!-- nav broadcrumb -->
-     <nav aria-label="breadcrumb" class="sign justify-content-end">
+    <!-- nav broadcrumb -->
+    <nav aria-label="breadcrumb" class="sign justify-content-end">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="<?= base_url('home') ?>">Home</a></li>
             <li class="breadcrumb-item"><a href="<?= base_url('home/rekreasi') ?>">Wisata Rekreasi</a></li>
@@ -7,7 +7,7 @@
         </ol>
     </nav>
     <!-- end nav broadcrumb -->
-    
+
     <section class="gallery">
         <div class="container">
             <div class="gallary-header text-center">
@@ -22,8 +22,10 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                     </p>
-                </div><!--/.packages-review-->
-            </div><!--/.gallery-header-->
+                </div>
+                <!--/.packages-review-->
+            </div>
+            <!--/.gallery-header-->
 
             <div class="gallery-box">
                 <div class="gallery-content">
@@ -32,27 +34,28 @@
 
                             <div class="col-md-4">
                                 <div class="filtr-item">
-                                    <img src="<?= base_url('asset/img/rekreasi/').$rekreasi['image']; ?>" alt="portfolio image"/>
+                                    <img src="<?= base_url('asset/img/rekreasi/') . $rekreasi['image']; ?>" alt="portfolio image" />
                                 </div><!-- /.filtr-item -->
                             </div><!-- /.col -->
 
                             <div class="col-md-4">
                                 <div class="filtr-item">
-                                    <img src="<?= base_url('asset/img/rekreasi/').$rekreasi['image']; ?>" alt="portfolio image"/>
+                                    <img src="<?= base_url('asset/img/rekreasi/') . $rekreasi['image']; ?>" alt="portfolio image" />
                                 </div><!-- /.filtr-item -->
                             </div><!-- /.col -->
 
                             <div class="col-md-4">
                                 <div class="filtr-item">
-                                    <img src="<?= base_url('asset/img/rekreasi/').$rekreasi['image']; ?>" alt="portfolio image"/>
+                                    <img src="<?= base_url('asset/img/rekreasi/') . $rekreasi['image']; ?>" alt="portfolio image" />
                                 </div><!-- /.filtr-item -->
                             </div><!-- /.col -->
 
                         </div><!-- /.row -->
-                        
+
                     </div><!-- /.filtr-container-->
                 </div><!-- /.gallery-content -->
-            </div><!--/.galley-box-->
+            </div>
+            <!--/.galley-box-->
 
             <div class="item-desc">
                 <div class="row">
@@ -61,7 +64,7 @@
                         <div class="title-desc">
                             <h4>Deskripsi Wisata</h4>
                         </div>
-        
+
                         <div class="pdesc">
                             <p><?= $rekreasi['deskripsi'] ?></p>
                         </div>
@@ -78,10 +81,10 @@
                                     <p><strong>Alamat: </strong> <?= $rekreasi['address'] ?> </p>
                                 </li>
                                 <li>
-                                    <p><strong>Fasilitas: </strong>  <?= $rekreasi['facility'] ?></p>
+                                    <p><strong>Fasilitas: </strong> <?= $rekreasi['facility'] ?></p>
                                 </li>
                                 <li>
-                                    <p><strong>Tiket Masuk: </strong>  <?= $rekreasi['ticket'] ?></p>
+                                    <p><strong>Tiket Masuk: </strong> <?= $rekreasi['ticket'] ?></p>
                                 </li>
                                 <li>
                                     <p><strong>Jam Buka: </strong> <?= $rekreasi['time_open'] ?></p>
@@ -106,14 +109,15 @@
                 <p>
                     Berikut ini beberapa testimoni dari beberapa orang yang telah mengunjungi tempat ini.
                 </p>
-            </div><!--/.gallery-header-->
+            </div>
+            <!--/.gallery-header-->
 
             <div class="row">
 
                 <div class="col-md-12">
                     <div class="testimonials">
                         <div class="owl-carousel" id="carousel1">
-                            
+
                             <div class="item">
                                 <div class="card text-center">
                                     <img class="card-img-top" src="<?= base_url('asset/img/testimoni/') ?>testi1.jpg" alt="img">
@@ -182,10 +186,12 @@
 
                         </div>
                     </div>
-                
+
                 </div> <!-- /.col-->
             </div> <!-- /.row -->
 
         </div> <!-- /.container-->
     </section>
     <!-- testimonial end -->
+
+    

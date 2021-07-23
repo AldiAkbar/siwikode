@@ -1,5 +1,5 @@
-<!-- header -->
-<div class="header">
+    <!-- header -->
+    <div class="header">
         <div class="header-content">
             <div class="container">
                 <div class="row">
@@ -17,28 +17,28 @@
             </div>
         </div>
     </div>
-    <!-- end header --> 
+    <!-- end header -->
 
     <!-- Wisata rekreasi -->
     <section id="wisata-rekreasi" class="gallery">
         <div class="container">
-                <div class="gallary-header text-center">
-                    <h2>Wisata Rekreasi</h2>
-                    <p>Berikut ini kami berikan beberapa referensi wisata rekreasi di wilayah kota Depok.</p>
-                </div>
-                <!--/.gallery-header-->
-                <div class="gallery-box">
-                    <div class="gallery-content">
-                        <div class="filtr-container">
-                            <div class="row">
+            <div class="gallary-header text-center">
+                <h2>Wisata Rekreasi</h2>
+                <p>Berikut ini kami berikan beberapa referensi wisata rekreasi di wilayah kota Depok.</p>
+            </div>
+            <!--/.gallery-header-->
+            <div class="gallery-box">
+                <div class="gallery-content">
+                    <div class="filtr-container">
+                        <div class="row">
 
-                                <?php foreach($rekreasi as $r) : ?>
-                                    <?php if($r['id'] < 6 ) : ?>
-                                        <?php if($r['id'] == 1 OR $r['id'] == 2) : ?>
-                                            <div class="col-md-6">
+                            <?php foreach ($rekreasi as $r) : ?>
+                                <?php if ($r['id'] < 6) : ?>
+                                    <?php if ($r['id'] == 1 or $r['id'] == 2) : ?>
+                                        <div class="col-md-6">
                                         <?php else : ?>
                                             <div class="col-md-4">
-                                        <?php endif; ?>
+                                            <?php endif; ?>
                                             <div class="filtr-item">
                                                 <img src="<?= base_url('asset/img/rekreasi/') . $r['image']; ?>" alt="portfolio image" />
                                                 <div class="item-title">
@@ -47,99 +47,111 @@
                                                     </a>
                                                 </div><!-- /.item-title -->
                                             </div><!-- /.filtr-item -->
-                                        </div><!-- /.col -->
-                                    <?php endif; ?>
-                                <?php endforeach; ?>
-                            </div><!-- /.row -->
+                                            </div><!-- /.col -->
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                        </div><!-- /.row -->
 
-                            <div class="button-details">
-                                <div class="row text-center">
-                                    <div class="col align-center">
-                                        <a href="<?= base_url('rekreasi'); ?>" class="btn btn-solid-lg btn-promote">Lihat Semua</a>
-                                    </div>
-                                </div>
-                            </div>
+                                        <div class="button-details">
+                                            <div class="row text-center">
+                                                <div class="col align-center">
+                                                    <a href="<?= base_url('rekreasi'); ?>" class="btn btn-solid-lg btn-promote">Lihat Semua</a>
+                                                </div>
+                                            </div>
+                                        </div>
 
                         </div><!-- /.filtr-container-->
                     </div><!-- /.gallery-content -->
                 </div>
                 <!--/.galley-box-->
-        </div>
-        <!--/.container-->
+            </div>
+            <!--/.container-->
 
     </section>
     <!--/.gallery-->
     <!--gallery end-->
 
     <!--blog start-->
-		<section id="blog" class="blog">
-			<div class="container">
-				<div class="blog-details">
-						<div class="gallary-header text-center">
-							<h2>
-								Artikel
-							</h2>
-							<p>
-                                Berikut ini informasi - informasi terbaru seputar wisata yang yang ada di Kota Depok.
-							</p>
-						</div><!--/.gallery-header-->
-						<div class="blog-content">
-							<div class="row">
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="blog-details">
+                <div class="gallary-header text-center">
+                    <h2>
+                        Artikel
+                    </h2>
+                    <p>
+                        Berikut ini informasi - informasi terbaru seputar wisata yang yang ada di Kota Depok.
+                    </p>
+                </div>
+                <!--/.gallery-header-->
+                <div class="blog-content">
+                    <div class="row">
 
-                            <?php foreach($artikel as $a) : ?>
-                                <?php if($a['id'] < 4 ) : ?>
+                        <?php foreach ($artikel as $a) : ?>
+                            <?php if ($a['id'] < 4) : ?>
 
-                                    <div class="col-sm-4 col-md-4">
-                                        <div class="thumbnail">
-                                            <h2>trending news <span>14 Juni 2021</span></h2>
-                                            <div class="thumbnail-img">
-                                                <img src="<?= base_url('asset/img/artikel/').$a['image']; ?>" alt="blog-img">
-                                                <div class="thumbnail-img-overlay"></div><!--/.thumbnail-img-overlay-->
-                                            
-                                            </div><!--/.thumbnail-img-->
-                                            
-                                            <div class="caption">
-                                                <div class="blog-txt">
-                                                    <h3>
-                                                        <a href="#">
-                                                            <?= $a['title'] ?>
-                                                        </a>
-                                                    </h3>
-                                                    <p>
-                                                        <?= $a['preview'] ?>
-                                                    </p>
-                                                    <div class="about-btn">
-                                                        <a href="<?= base_url() ?>">
-                                                            <button class="about-view packages-btn">
-                                                                Details
-                                                            </button>
-                                                        </a>
-                                                    </div>
-                                                </div><!--/.blog-txt-->
-                                            </div><!--/.caption-->
-                                        </div><!--/.thumbnail-->
+                                <div class="col-sm-4 col-md-4">
+                                    <div class="thumbnail">
+                                        <h2>trending news <span>14 Juni 2021</span></h2>
+                                        <div class="thumbnail-img">
+                                            <img src="<?= base_url('asset/img/artikel/') . $a['image']; ?>" alt="blog-img">
+                                            <div class="thumbnail-img-overlay"></div>
+                                            <!--/.thumbnail-img-overlay-->
 
-                                    </div><!--/.col-->
+                                        </div>
+                                        <!--/.thumbnail-img-->
 
-                                <?php endif; ?>
-                            <?php endforeach; ?>
-
-							</div><!--/.row-->
-
-                            <div class="button-details">
-                                <div class="row text-center">
-                                    <div class="col align-center">
-                                        <a href="<?= base_url('rekreasi'); ?>" class="btn btn-solid-lg btn-promote">Lihat Semua</a>
+                                        <div class="caption">
+                                            <div class="blog-txt">
+                                                <h3>
+                                                    <a href="#">
+                                                        <?= $a['title'] ?>
+                                                    </a>
+                                                </h3>
+                                                <p>
+                                                    <?= $a['preview'] ?>
+                                                </p>
+                                                <div class="about-btn">
+                                                    <a href="<?= base_url() ?>">
+                                                        <button class="about-view packages-btn">
+                                                            Details
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!--/.blog-txt-->
+                                        </div>
+                                        <!--/.caption-->
                                     </div>
-                                </div>
-                            </div>
-                            
-    				    </div><!--/.blog-content-->
-					</div><!--/.blog-details-->
-				</div><!--/.container-->
+                                    <!--/.thumbnail-->
 
-		</section><!--/.blog-->
-		<!--blog end-->
+                                </div>
+                                <!--/.col-->
+
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+
+                    </div>
+                    <!--/.row-->
+
+                    <div class="button-details">
+                        <div class="row text-center">
+                            <div class="col align-center">
+                                <a href="<?= base_url('rekreasi'); ?>" class="btn btn-solid-lg btn-promote">Lihat Semua</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.blog-content-->
+            </div>
+            <!--/.blog-details-->
+        </div>
+        <!--/.container-->
+
+    </section>
+    <!--/.blog-->
+    <!--blog end-->
 
     <!-- wisata kuliner -->
     <section id="wisata-kuliner" class="packages">
@@ -156,8 +168,8 @@
             <div class="packages-content">
                 <div class="row">
 
-                    <?php foreach($kuliner as $k) : ?>
-                        <?php if($k['id'] < 7 ) : ?>
+                    <?php foreach ($kuliner as $k) : ?>
+                        <?php if ($k['id'] < 7) : ?>
 
                             <div class="col-md-4 col-sm-6">
                                 <div class="single-package-item">
@@ -165,17 +177,11 @@
                                     <div class="single-package-item-txt">
                                         <h3><?= $k['name']; ?></h3>
                                         <div class="packages-para">
-                                            <p>
-                                                <span>
-                                                    <i class="fa fa-angle-right"></i> Sushi
-                                                </span>
-                                                <i class="fa fa-angle-right"></i> Bento
+                                            <p class="address">
+                                                <i class="fa fa-angle-right"></i><?= $k['menu'] ?>
                                             </p>
                                             <p>
-                                                <span>
-                                                    <i class="fa fa-angle-right"></i> Donburi
-                                                </span>
-                                                <i class="fa fa-angle-right"></i> Ramen
+                                                <i class="fa fa-angle-right"></i> <?= $k['time_open'] ?>
                                             </p>
                                         </div>
                                         <!--/.packages-para-->
@@ -191,7 +197,7 @@
                                         </div>
                                         <!--/.packages-review-->
                                         <div class="about-btn">
-                                            <a href="<?= base_url('kuliner/').$k['id']; ?>">
+                                            <a href="<?= base_url('kuliner/') . $k['id']; ?>">
                                                 <button class="about-view packages-btn">
                                                     Details
                                                 </button>
@@ -244,18 +250,18 @@
                     <div class="testimonials">
                         <div class="owl-carousel" id="carousel1">
 
-                        <?php foreach($testimoni as $t) : ?>
-                            <div class="item">
-                                <div class="card text-center">
-                                    <img class="card-img-top" src="<?= base_url('asset/img/testimoni/') . $t['image']; ?>" alt="img">
-                                    <div class="card-body">
-                                        <h5><?= $t['name']; ?></h5>
-                                        <p class="job"><?= $t['job']; ?></p>
-                                        <p class="card-text"><?= $t['description']; ?></p>
+                            <?php foreach ($testimoni as $t) : ?>
+                                <div class="item">
+                                    <div class="card text-center">
+                                        <img class="card-img-top" src="<?= base_url('asset/img/testimoni/') . $t['image']; ?>" alt="img">
+                                        <div class="card-body">
+                                            <h5><?= $t['name']; ?></h5>
+                                            <p class="job"><?= $t['job']; ?></p>
+                                            <p class="card-text"><?= $t['description']; ?></p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        <?php endforeach;  ?>
+                            <?php endforeach;  ?>
 
                         </div> <!-- /.carousel -->
                     </div> <!-- /.testimoni -->

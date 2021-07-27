@@ -18,8 +18,6 @@
     <link rel="icon" href="<?= base_url() ?>asset/img/favicon/icon3.ico">
     <!-- Custom styles for this template-->
     <link href="<?= base_url(); ?>asset/vendor/sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
-    <!-- style css -->
-    <link rel="stylesheet" href="<?= base_url() ?>asset/css/home/style.css">
 
 </head>
 

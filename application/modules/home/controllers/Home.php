@@ -14,8 +14,8 @@ class Home extends CI_Controller {
 		}
     }
 
-    public function index() {
-        $data['title'] = 'Beranda';
+    public function index()
+    {
         $data['user'] = $this->user;
         $data['rekreasi'] = $this->M_Home->getRekreasi();
         $data['artikel'] = $this->M_Home->getArtikel();
@@ -23,10 +23,25 @@ class Home extends CI_Controller {
         $data['menu_kuliner'] = $this->M_Home->getMenuKuliner();
         $data['testimoni'] = $this->M_Home->getTestimoni();
 
-        $this->load->view('layouts/header',$data);
-		$this->load->view('layouts/navbar',$data);
-		$this->load->view('v_home/index',$data);
-		$this->load->view('layouts/footer');
+        $data['title'] = 'Beranda';
+        $this->load->view('layouts/header', $data);
+        $this->load->view('layouts/navbar', $data);
+        $this->load->view('v_home/index', $data);
+        $this->load->view('layouts/footer');
+    }
+
+    public function inbox()
+    {
+        $data = [
+            'nama' => $this->input->post('nama'),
+            'email' => $this->input->post('email'),
+            'pesan' => $this->input->post('pesan')
+        ];
+        // var_dump($data);
+        // die;
+        $this->db->insert('inbox', $data);
+        $this->session->set_flashdata('flash', 'Dikirim');
+        redirect('home');
     }
 
     public function about() {

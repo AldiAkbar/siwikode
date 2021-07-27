@@ -1,12 +1,12 @@
     <!-- nav broadcrumb -->
     <nav aria-label="breadcrumb" class="sign justify-content-end">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="<?= base_url('home') ?>">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?= base_url('home') ?>" class="a-underlined">Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Tentang</li>
         </ol>
     </nav>
     <!-- end nav broadcrumb -->
-    
+
     <!-- testemonial start -->
     <section id="testimoni" class="gallery">
         <div class="container px-lg-4 px-md-4">
@@ -17,14 +17,15 @@
                 <p>
                     Berikut ini anggota kelompok yang telah berkontribusi dalam pembuatan website SIWIKODE ini.
                 </p>
-            </div><!--/.gallery-header-->
+            </div>
+            <!--/.gallery-header-->
 
             <div class="row">
 
-                <?php foreach($kontributor as $k) : ?>
-                <div class="col-md-6 mb-3">
-                    <div class="testimonials">
-                            
+                <?php foreach ($kontributor as $k) : ?>
+                    <div class="col-md-6 mb-3">
+                        <div class="testimonials">
+
                             <div class="item">
                                 <div class="card text-center">
                                     <img class="card-img-top" src="<?= base_url('asset/img/kontributor/') . $k['image']; ?>" alt="img">
@@ -48,9 +49,9 @@
                                     </div>
                                 </div>
                             </div>
-                    </div>
-                        
-                </div> <!-- /.col-->
+                        </div>
+
+                    </div> <!-- /.col-->
                 <?php endforeach; ?>
 
             </div> <!-- /.row -->

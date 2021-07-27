@@ -1,20 +1,52 @@
+const flashData = $('.flash-data').data('flashdata');
+
+if (flashData) {
+    Swal({
+        title: 'Pesan',
+        text: 'Berhasil ' + flashData,
+        type: 'success'
+    });
+}
+
+// tombol-hapus
+$('.tombol-hapus').on('click', function (e) {
+
+    e.preventDefault();
+    const href = $(this).attr('href');
+
+    Swal({
+        title: 'Apakah anda yakin',
+        text: "data mahasiswa akan dihapus",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Hapus Data!'
+    }).then((result) => {
+        if (result.value) {
+            document.location.href = href;
+        }
+    })
+
+});
+
 // preloader
 $(window).on('load', function() {
 	$('.loader-container').fadeOut(2000);
 });
 
-// page scroll
-$('.page-scroll').on('click', function(e) { 
-	var tujuan = $(this).attr('href');
-	var elemenTujuan = $(tujuan);
+// // page scroll
+// $('.page-scroll').on('click', function(e) { 
+// 	var tujuan = $(this).attr('href');
+// 	var elemenTujuan = $(tujuan);
 
-		$('html,body').animate({
-			scrollTop:elemenTujuan.offset().top + 20
-		}, 600, 'swing');
+// 		$('html,body').animate({
+// 			scrollTop:elemenTujuan.offset().top + 20
+// 		}, 600, 'swing');
 
-		e.preventDefault();
+// 		e.preventDefault();
 
-});
+// });
 
 // navbar script
 // jQuery for page scrolling feature - requires jQuery Easing plugin

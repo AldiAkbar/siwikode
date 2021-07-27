@@ -6,24 +6,11 @@
         <div class="row">
 
             <div class="col-md-6">
-                <h5 class="judul-sosmed">FOLLOW US ON SOCIAL MEDIA</h5>
-                <div class="icon-sosmed">
-                    <a href="" target="_blank">
-                        <i class="fab fa-facebook" ></i>
-                    </a>
-                    <a href="" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
+                <h5 class="judul-link">Tentang SIWIKODE</h5>
+                <p class="p-small">SIWIKODE adalah web yang memberikan informasi sekaligus tempat untuk mempromosikan wisata rekreasi dan wisata kuliner di sekitar wilayah kota Depok.</p>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <h5 class="judul-link">LINK</h5>
                 <ul>
                     <li class="list-link">
@@ -33,25 +20,37 @@
                         <a href="">Wisata Kuliner</a>
                     </li>
                     <li class="list-link">
-                        <a href="">Testimoni</a>
+                        <a href="">Artikel</a>
                     </li>
                     <li class="list-link">
-                        <a href="">Registrasi</a>
+                        <a href="">Testimoni</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="col-md-3">
-                <h5 class="judul-about">ABOUT</h5>
+            <div class="col-md-2">
+                <h5 class="judul-link">ABOUT</h5>
                 <ul>
-                    <li class="list-about">
+                    <li class="list-link">
                         <a href="">Terms & Condition</a>
                     </li>
-                    <li class="list-about">
+                    <li class="list-link">
                         <a href="">FAQ</a>
                     </li>
-                    <li class="list-about">
+                    <li class="list-link">
                         <a href="">Customer Service</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <h5 class="judul-link">THANKS TO</h5>
+                <ul>
+                    <li class="list-link">
+                        <a href="">Inovatik</a>
+                    </li>
+                    <li class="list-link">
+                        <a href="">ThemeSINE</a>
                     </li>
                 </ul>
             </div>
@@ -64,13 +63,13 @@
 
 <!-- copyright -->
 <div class="copyright">
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 text-center">
-            <p>&copy; Kelompok 5 || Teknik Informatika 02 Pagi</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p>&copy; Kelompok 5 || Teknik Informatika 02 Pagi</p>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <!-- end copyright -->
 

@@ -1,8 +1,8 @@
     <!-- nav broadcrumb -->
     <nav aria-label="breadcrumb" class="sign justify-content-end">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="<?= base_url('home') ?>">Home</a></li>
-            <li class="breadcrumb-item"><a href="<?= base_url('home/rekreasi') ?>">Wisata Rekreasi</a></li>
+            <li class="breadcrumb-item"><a href="<?= base_url('home') ?>" class="a-underlined">Home</a></li>
+            <li class="breadcrumb-item"><a href="<?= base_url('home/rekreasi') ?>" class="a-underlined">Wisata Rekreasi</a></li>
             <li class="breadcrumb-item active" aria-current="page"><?= $rekreasi['name']; ?></li>
         </ol>
     </nav>
@@ -193,5 +193,3 @@
         </div> <!-- /.container-->
     </section>
     <!-- testimonial end -->
-
-    

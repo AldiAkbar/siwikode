@@ -1,3 +1,16 @@
+    <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
+    <?php if ($this->session->flashdata('flash')) : ?>
+        <!-- <div class="row mt-3">
+        <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Data mahasiswa <strong>berhasil</strong> <?= $this->session->flashdata('flash'); ?>.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div> -->
+    <?php endif; ?>
     <!-- header -->
     <div class="header">
         <div class="header-content">
@@ -92,7 +105,7 @@
 
                                 <div class="col-sm-4 col-md-4">
                                     <div class="thumbnail">
-                                        <h2>trending news <span>14 Juni 2021</span></h2>
+                                        <h2>Trending News <span>14 Juni 2021</span></h2>
                                         <div class="thumbnail-img">
                                             <img src="<?= base_url('asset/img/artikel/') . $a['image']; ?>" alt="blog-img">
                                             <div class="thumbnail-img-overlay"></div>
@@ -273,3 +286,87 @@
         </div> <!-- /.container-->
     </section>
     <!-- testimonial end -->
+
+    <section id="contact" class="form">
+        <div class="container">
+            <div class="gallary-header text-center">
+                <h2>
+                    Contact Us
+                </h2>
+                <p>
+                    Silahkan berikan pertanyaan ataupun kritik dan saran untuk website ini.
+                </p>
+            </div>
+
+            <!-- Contact -->
+            <div id="contact" class="form-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 form-explain">
+                            <div class="text-container">
+                                <h2>Form responden pengguna website SIWIKODE</h2>
+                                <p>Anda bisa memberikan saran atau kritik serta pertanyaan terkait dengan website SIWIKODE ini dengan mengisi form di samping atau dengan menghubungi kontak dibawah ini.</p>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="address"><i class="fas fa-map-marker-alt"></i> Jl. Sejahtera No. 9 RT 03 RW 01 Lenteng Agung, Jakarta Selatan 51241</li>
+                                    <li><i class="fas fa-phone "></i><a class="a-colored" href="tel:003024630820">+62 852 2943 8775</a></li>
+                                    <li><i class="fas fa-phone "></i><a class="a-colored" href="tel:003024630820">+62 895 6178 27748</a></li>
+                                    <li><i class="fas fa-envelope "></i><a class="a-colored" href="mailto:office@aria.com">siwikode@gmail.com</a></li>
+                                </ul>
+
+                                <div class="contact-sosmed">
+                                    <h3 class="judul-sosmed">Follow SIWIKODE on Social Media</h3>
+                                    <div class="icon-sosmed">
+                                        <a href="" target="_blank">
+                                            <i class="fab fa-facebook a-colored"></i>
+                                        </a>
+                                        <a href="" target="_blank">
+                                            <i class="fab fa-twitter a-colored"></i>
+                                        </a>
+                                        <a href="" target="_blank">
+                                            <i class="fab fa-instagram a-colored"></i>
+                                        </a>
+                                        <a href="" target="_blank">
+                                            <i class="fab fa-youtube a-colored"></i>
+                                        </a>
+                                        <a href="" target="_blank">
+                                            <i class="fab fa-linkedin a-colored"></i>
+                                        </a>
+                                        <a href="" target="_blank">
+                                            <i class="fab fa-github a-colored"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> <!-- end of text-container -->
+                        </div> <!-- end of col -->
+                        <div class="col-lg-6">
+
+                            <!-- Contact Form -->
+                            <form action="<?= base_url('home/inbox'); ?>" method="POST">
+                                <div class="form-group">
+                                    <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="nama" class="form-control" placeholder="Nama">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="pesan" rows="5" placeholder="Masukkan Pesan"></textarea>
+                                </div>
+                                <div class="form-group checkbox">
+                                    <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with SIWIKODE stated <a href="" class="a-underlined">Privacy Policy</a> and <a href="" class="a-underlined">Terms Conditions</a>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <button type="submit" class="btn btn-solid-lg btn-form">SUBMIT MESSAGE</button>
+                            </form>
+                            <!-- end of contact form -->
+
+                        </div> <!-- end of col -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div> <!-- end of form-2 -->
+            <!-- end of contact -->
+
+        </div>
+    </section>

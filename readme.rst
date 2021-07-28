@@ -16,3 +16,8 @@ SPECIAL THANKS TO :
 - Template TourNest Website by ThemeSINE
 - Aria - Business HTML Landing Page Template by Inovatik
 *****************
+LOGIN ADMIN :
+*****************
+- Username  : admin@example.com
+- Passwoord : admin123 
+*****************

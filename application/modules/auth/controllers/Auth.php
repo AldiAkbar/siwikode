@@ -43,10 +43,13 @@ class Auth extends CI_Controller
                     $this->session->set_userdata($data);
                     // cek admin atau member
                     if ($user['role_id'] == 1) {
+                        $this->session->set_flashdata('message', 'Login');
                         redirect('admin');
                     } elseif($user['role_id'] == 3) {
+                        $this->session->set_flashdata('message', 'Login');
                         redirect('writer');
                     } else {
+                        $this->session->set_flashdata('message', 'Login');
                         redirect('user');
                     }
                 } else {

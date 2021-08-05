@@ -39,7 +39,7 @@ class SubMenu extends CI_Controller {
             ];
 
             $this->db->insert('user_sub_menu', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your new submenu has been succesfully added.</div>');
+            $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/SubMenu');
         }
     }
@@ -52,11 +52,8 @@ class SubMenu extends CI_Controller {
         $this->form_validation->set_rules('menu_id', 'Menu', 'required');
         $this->form_validation->set_rules('url', 'URL', 'required');
         $this->form_validation->set_rules('icon', 'Icon', 'required');
-    
-        if ($this->form_validation->run() == false) {
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your submenu has not been edited.</div>');
-            redirect('admin/SubMenu');
-        } else {
+
+        if ($this->form_validation->run() == true) {
             $id = $this->input->post('id');
             $data = [
                 'id' => $id,
@@ -70,18 +67,15 @@ class SubMenu extends CI_Controller {
             $this->db->where('id', $id);
             $this->db->update('user_sub_menu', $data);
 
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your submenu has been successfully edited.</div>');
+            $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/SubMenu');
         }
     }
 
     public function deleteSubMenu($id) {
         $this->db->delete('user_sub_menu', ['id' => $id]);
-        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your submenu has been successfully deleted.</div>');
+        $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/SubMenu');
     }
-
-    
-
 
 }

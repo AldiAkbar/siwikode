@@ -1,16 +1,3 @@
-    <div class="flash-data" data-flashdata="<?= $this->session->flashdata('flash'); ?>"></div>
-    <?php if ($this->session->flashdata('flash')) : ?>
-        <!-- <div class="row mt-3">
-        <div class="col-md-6">
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                Data mahasiswa <strong>berhasil</strong> <?= $this->session->flashdata('flash'); ?>.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-    </div> -->
-    <?php endif; ?>
     <!-- header -->
     <div class="header">
         <div class="header-content">
@@ -105,7 +92,7 @@
 
                                 <div class="col-sm-4 col-md-4">
                                     <div class="thumbnail">
-                                        <h2>Trending News <span>14 Juni 2021</span></h2>
+                                        <h2>Trending News <span><?= date('d M Y', strtotime($a['date_created'])); ?></span></h2>
                                         <div class="thumbnail-img">
                                             <img src="<?= base_url('asset/img/artikel/') . $a['image']; ?>" alt="blog-img">
                                             <div class="thumbnail-img-overlay"></div>
@@ -339,6 +326,7 @@
                             </div> <!-- end of text-container -->
                         </div> <!-- end of col -->
                         <div class="col-lg-6">
+                            <div class="flash-data" data-flashdata="<?= $this->session->flashdata('message'); ?>"></div>
 
                             <!-- Contact Form -->
                             <form action="<?= base_url('home/inbox'); ?>" method="POST">

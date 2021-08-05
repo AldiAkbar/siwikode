@@ -15,4 +15,10 @@ class M_Kuliner extends CI_Model {
         return $this->db->get('jenis_kuliner')->result_array();
     }
 
+    public function getImageKuliner($id)
+    {
+        $query = "SELECT `image` FROM `kuliner` WHERE id = $id";
+        return $this->db->query($query)->row_array();
+    }
+
 }

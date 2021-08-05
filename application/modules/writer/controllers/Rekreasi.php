@@ -48,7 +48,7 @@ class Rekreasi extends CI_Controller {
             // die;
 
             $this->db->insert('rekreasi', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your new Wisata Rekreasi has been succesfully added.</div>');
+            $this->session->set_flashdata('message', 'Ditambahkan');
             redirect('writer/rekreasi');
         }
     }

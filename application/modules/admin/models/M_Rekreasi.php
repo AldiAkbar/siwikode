@@ -15,4 +15,10 @@ class M_Rekreasi extends CI_Model {
         return $this->db->get('jenis_rekreasi')->result_array();
     }
 
+    public function getImageRekreasi($id)
+    {
+        $query = "SELECT `image` FROM `rekreasi` WHERE id = $id";
+        return $this->db->query($query)->row_array();
+    }
+
 }

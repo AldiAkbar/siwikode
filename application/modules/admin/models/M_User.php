@@ -27,4 +27,10 @@ class M_User extends CI_Model {
         return $this->db->get('artikel')->num_rows();
     }
 
+    public function getImageUser($id)
+    {
+        $query = "SELECT `image` FROM `user` WHERE id = $id";
+        return $this->db->query($query)->row_array();
+    }
+
 }

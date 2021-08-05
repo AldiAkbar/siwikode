@@ -45,18 +45,19 @@ class Kuliner extends CI_Controller {
 
             $this->db->where('id', $id);
             $this->db->update('kuliner', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your Wisata Kuliner has been succesfully updated.</div>');
+            $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/kuliner');
         }
-
 
     }
 
     public function delete($id) {
+        $old_image = $this->M_Kuliner->getImageKuliner($id);
+        unlink("asset/img/kuliner/" . $old_image['image']);
         $this->db->delete('kuliner', ['id' => $id]);
-        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your Wisata Kuliner has been successfully deleted.</div>');
+
+        $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/kuliner');
     }
     
-
 }

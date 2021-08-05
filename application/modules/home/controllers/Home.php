@@ -40,7 +40,7 @@ class Home extends CI_Controller {
         // var_dump($data);
         // die;
         $this->db->insert('inbox', $data);
-        $this->session->set_flashdata('flash', 'Dikirim');
+        $this->session->set_flashdata('message', 'Dikirim');
         redirect('home');
     }
 

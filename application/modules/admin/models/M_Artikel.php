@@ -11,8 +11,15 @@ class M_Artikel extends CI_Model {
         return $this->db->query($query)->result_array();
     }
 
-    public function getCategoryArtikel() {
+    public function getKategoriWisata()
+    {
         return $this->db->get('kategori_wisata')->result_array();
+    }
+
+    public function getImageArtikel($id)
+    {
+        $query = "SELECT `image` FROM `artikel` WHERE id = $id";
+        return $this->db->query($query)->row_array();
     }
 
 }

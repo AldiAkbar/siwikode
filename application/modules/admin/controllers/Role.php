@@ -25,7 +25,7 @@ class Role extends CI_Controller {
             $this->load->view('layouts/footer');
         } else {
             $this->db->insert('user_role', ['role' => $this->input->post('role')]);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your new role has been succesfully added.</div>');
+            $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/role');
         }
     }
@@ -34,10 +34,7 @@ class Role extends CI_Controller {
         $data['role'] = $this->M_Role->getRole();
 
         $this->form_validation->set_rules('role', 'Role', 'required');
-        if ($this->form_validation->run() == false) {
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your new role has not been edited.</div>');
-            redirect('admin/role');
-        } else {
+        if ($this->form_validation->run() == true) {
             $id = $this->input->post('id');
             $role = $this->input->post('role');
             $data = [   
@@ -48,14 +45,14 @@ class Role extends CI_Controller {
             $this->db->where('id', $id);
             $this->db->update('user_role', $data);
 
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your new role has been succesfully edited.</div>');
+            $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/role');
         }
     }
 
     public function deleteRole($id) {
         $this->db->delete('user_role', ['id' => $id]);
-        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your role has been succesfully deleted.</div>');
+        $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/role');
         
     }
@@ -94,7 +91,7 @@ class Role extends CI_Controller {
             $this->db->delete('user_access_menu', $data);
         }
 
-        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your role access has been succesfully changed.</div>');
+        $this->session->set_flashdata('message', 'Diubah');
 
     }
 

@@ -28,7 +28,7 @@ class Menu extends CI_Controller
             $this->load->view('layouts/footer');
         } else {
             $this->db->insert('user_menu', ['menu' => $this->input->post('menu')]);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your new menu has been succesfully added.</div>');
+            $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/menu');
         }
     }
@@ -37,10 +37,7 @@ class Menu extends CI_Controller
         $data['menu'] = $this->M_Menu->getMenu();
 
         $this->form_validation->set_rules('menu', 'Menu', 'required');
-        if ($this->form_validation->run() == false) {
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your menu has not been edited</div>');
-            redirect('menu');
-        } else {
+        if ($this->form_validation->run() == true) {
             $id = $this->input->post('id');
             $menu = $this->input->post('menu');
             $data = [
@@ -51,14 +48,14 @@ class Menu extends CI_Controller
             $this->db->where('id', $id);
             $this->db->update('user_menu', $data);
 
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your menu has been edited.</div>');
+            $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/menu');
         }
     }
 
     public function deleteMenu($id) {
         $this->db->delete('user_menu', ['id' => $id]);
-        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your menu has been succesfully deleted.</div>');
+        $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/menu');
     }
 

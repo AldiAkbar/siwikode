@@ -49,6 +49,8 @@ class User extends CI_Controller {
                     }
                     $new_image = $this->upload->data('file_name');
                     $this->db->set('image', $new_image);
+                } elseif ($image == 'default.jpg') {
+                    $this->db->set('image', 'default.jpg');
                 } else {
                     echo $this->upload->display_errors();
                 }
@@ -58,7 +60,7 @@ class User extends CI_Controller {
             $this->db->where('email', $email);
             $this->db->update('user');
 
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your profile has been updated.</div>');
+            $this->session->set_flashdata('message', 'Diubah');
             redirect('user');
 
         }
@@ -96,7 +98,7 @@ class User extends CI_Controller {
                     $this->db->where('email', $this->session->userdata('email'));
                     $this->db->update('user');
 
-                    $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your password has been changed.</div>');
+                    $this->session->set_flashdata('message', 'Diubah');
                     redirect('user/changePassword');
                 }
             }

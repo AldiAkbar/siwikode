@@ -16,7 +16,7 @@ class Artikel extends CI_Controller {
         $data['title'] = 'Article Management';
         $data['user'] = $this->M_User->getUser();
         $data['artikel'] = $this->M_Artikel->getArtikel();
-        $data['category_artikel'] = $this->M_Artikel->getCategoryArtikel();
+        $data['kategori_wisata'] = $this->M_Artikel->getKategoriWisata();
 
         $this->form_validation->set_rules('title', 'Title', 'required');
         $this->form_validation->set_rules('kategori', 'Kategori Artikel', 'required');
@@ -41,16 +41,17 @@ class Artikel extends CI_Controller {
 
             $this->db->where('id', $id);
             $this->db->update('artikel', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your article has been succesfully updated.</div>');
+            $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/artikel');
         }
-
-
     }
 
     public function delete($id) {
+        $old_image = $this->M_Artikel->getImageArtikel($id);
+        unlink("asset/img/artikel/" . $old_image['image']);
         $this->db->delete('artikel', ['id' => $id]);
-        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your article has been successfully deleted.</div>');
+
+        $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/artikel');
     }
     

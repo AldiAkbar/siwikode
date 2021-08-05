@@ -54,7 +54,7 @@ class Testimoni extends CI_Controller
             // die;
 
             $this->db->insert('testimoni', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your Testimoni has been succesfully added.</div>');
+            $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/testimoni');
         }
     }
@@ -67,10 +67,7 @@ class Testimoni extends CI_Controller
         $this->form_validation->set_rules('job', 'Pekerjaan', 'required');
         $this->form_validation->set_rules('description', 'Testimoni', 'required|max_length[100]');
 
-        if ($this->form_validation->run() == false) {
-            $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your Testimoni has been fail to updated.</div>');
-            redirect('admin/testimoni');
-        } else {
+        if ($this->form_validation->run() == true) {
             $id = $this->input->post('id');
             $oldImage = $this->input->post('oldImage');
             $image = $_FILES['image']['name'];
@@ -105,15 +102,18 @@ class Testimoni extends CI_Controller
 
             $this->db->where('id', $id);
             $this->db->update('testimoni', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your Testimoni has been succesfully updated.</div>');
+            $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/testimoni');
         }
     }
 
     public function delete($id)
     {
+        $old_image = $this->M_Testimoni->getImageTestimoni($id);
+        unlink("asset/img/testimoni/" . $old_image['image']);
+
         $this->db->delete('testimoni', ['id' => $id]);
-        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your Wisata Kuliner has been successfully deleted.</div>');
+        $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/testimoni');
     }
 }

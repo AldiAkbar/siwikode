@@ -27,7 +27,7 @@
 
     						<div class="col-sm-4 col-md-4">
     							<div class="thumbnail">
-    								<h2>trending news <span>14 Juni 2021</span></h2>
+    								<h2>Trending News <span><?= date('d M Y', strtotime($a['date_created'])); ?></span></h2>
     								<div class="thumbnail-img">
     									<img src="<?= base_url('asset/img/artikel/') . $a['image']; ?>" alt="blog-img">
     									<div class="thumbnail-img-overlay"></div>

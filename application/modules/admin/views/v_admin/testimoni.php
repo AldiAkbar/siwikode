@@ -13,7 +13,7 @@
                                 </div>
                             <?php endif; ?>
 
-                            <?= $this->session->flashdata('message'); ?>
+                            <div class="flash-data" data-flashdata="<?= $this->session->flashdata('message'); ?>" data-title="Testimoni"></div>
                             <a href="" class="btn btn-primary mb-4 add-button" data-toggle="modal" data-target="#formModal">Add New Testimoni</a>
 
                             <table id="example" class="table table-hover">
@@ -38,7 +38,7 @@
                                             <td><?= $t['description'];  ?></td>
                                             <td>
                                                 <a href="" class="badge badge-success btn-edit" data-toggle="modal" data-target="#formEditModal<?= $t['id']; ?>">Edit</a>
-                                                <a href="<?= base_url('admin/testimoni/delete/' . $t['id']); ?>" class="badge badge-danger" onclick="return confirm('Are you sure want to delete this?')">Delete</a>
+                                                <a href="<?= base_url('admin/testimoni/delete/' . $t['id']); ?>" class="badge badge-danger tombol-hapus">Delete</a>
                                             </td>
                                         </tr>
                                         <?php $i++; ?>

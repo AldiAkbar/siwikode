@@ -43,7 +43,7 @@ class User_Management extends CI_Controller {
             ];
 
             $this->db->insert('user', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your new user has been succesfully added.</div>');
+            $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/user');
         }
     }
@@ -67,13 +67,16 @@ class User_Management extends CI_Controller {
         $this->db->where('id', $id);
         $this->db->update('user', $data);
 
-        $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your new user has been succesfully edited.</div>');
+        $this->session->set_flashdata('message', 'Diubah');
         redirect('admin/user');
     }
 
     public function deleteUser($id) {
+        $old_image = $this->M_User->getImageUser($id);
+        unlink("asset/img/profile/" . $old_image['image']);
+
         $this->db->delete('user', ['id'=>$id]);
-        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your user has been succesfully deleted.</div>');
+        $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/user');
     }
 

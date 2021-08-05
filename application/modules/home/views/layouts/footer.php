@@ -78,6 +78,8 @@
 <script src="<?= base_url() ?>asset/vendor/bootstrap/js/jquery.magnific-popup.js"></script>
 <script src="<?= base_url() ?>asset/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?= base_url() ?>asset/vendor/bootstrap/js/owl.carousel.min.js"></script>
+<!-- sweetalert -->
+<script src="<?= base_url(); ?>asset/vendor/sweetalert2/sweetalert2.all.min.js"></script>
 <script src="<?= base_url() ?>asset/js/home/script.js"></script>
 </body>
 

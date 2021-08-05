@@ -45,7 +45,7 @@ class Rekreasi extends CI_Controller {
 
             $this->db->where('id', $id);
             $this->db->update('rekreasi', $data);
-            $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Your Wisata Rekreasi has been succesfully updated.</div>');
+            $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/rekreasi');
         }
 
@@ -53,8 +53,11 @@ class Rekreasi extends CI_Controller {
     }
 
     public function delete($id) {
+        $old_image = $this->M_Rekreasi->getImageRekreasi($id);
+        unlink("asset/img/rekreasi/" . $old_image['image']);
         $this->db->delete('rekreasi', ['id' => $id]);
-        $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Your Wisata Rekreasi has been successfully deleted.</div>');
+
+        $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/rekreasi');
     }
     

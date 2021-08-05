@@ -13,7 +13,7 @@
                                 </div>
                             <?php endif; ?>
 
-                            <?= $this->session->flashdata('message'); ?>
+                            <div class="flash-data" data-flashdata="<?= $this->session->flashdata('message'); ?>" data-title="Artikel"></div>
 
                             <table id="example" class="table table-hover">
                                 <thead>
@@ -22,7 +22,6 @@
                                         <th scope="col">Judul</th>
                                         <th scope="col">Penulis</th>
                                         <th scope="col">Kategori</th>
-                                        <th scope="col">Foto</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
@@ -34,10 +33,9 @@
                                             <td><?= $a['title'];  ?></td>
                                             <td><?= $a['penulis'];  ?></td>
                                             <td><?= $a['kategori'];  ?></td>
-                                            <td><?= $a['image'];  ?></td>
                                             <td>
                                                 <a href="" class="badge badge-success btn-edit" data-toggle="modal" data-target="#formEditModal<?= $a['id']; ?>">Edit</a>
-                                                <a href="<?= base_url('admin/artikel/delete/' . $a['id']); ?>" class="badge badge-danger" onclick="return confirm('Are you sure want to delete this?')">Delete</a>
+                                                <a href="<?= base_url('admin/artikel/delete/' . $a['id']); ?>" class="badge badge-danger tombol-hapus">Delete</a>
                                             </td>
                                         </tr>
                                         <?php $i++; ?>
@@ -85,11 +83,12 @@
                                         </div>
                                         <div class="form-group">
                                             <select name="kategori" id="kategori" class="form-control">
-                                                <?php foreach ($category_artikel as $ca) : ?>
-                                                    <?php if ($a['category_artikel_id'] == $ca['id']) : ?>
-                                                        <option value="<?= $ca['id']; ?>" selected><?= $ca['category']; ?></option>
+                                                <option value="">Kategori Wisata</option>
+                                                <?php foreach ($kategori_wisata as $kw) : ?>
+                                                    <?php if ($a['kategori_wisata_id'] == $kw['id']) : ?>
+                                                        <option value="<?= $kw['id']; ?>" selected><?= $kw['kategori']; ?></option>
                                                     <?php else : ?>
-                                                        <option value="<?= $ca['id']; ?>"><?= $ca['category']; ?></option>
+                                                        <option value="<?= $kw['id']; ?>"><?= $kw['kategori']; ?></option>
                                                     <?php endif; ?>
                                                 <?php endforeach; ?>
                                             </select>

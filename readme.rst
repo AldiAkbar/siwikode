@@ -10,6 +10,7 @@ Library yang digunakan :
 - CKEDITOR
 - Datatables
 - Font-awesome
+- Sweetalert2
 *****************
 SPECIAL THANKS TO :
 *****************

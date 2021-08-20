@@ -33,7 +33,7 @@ class Artikel extends CI_Controller {
             $data = [
                 'id' => $id,
                 'title' => $this->input->post('title'),
-                'category_artikel_id' => $this->input->post('kategori'),
+                'kategori_wisata_id' => $this->input->post('kategori'),
                 'penulis' => $this->input->post('penulis'),
             ];
             // var_dump($data);

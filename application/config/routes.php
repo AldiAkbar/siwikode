@@ -57,7 +57,8 @@ $route['page'] = 'Page_Error/search_page';
 
 //modules admin//
 $route['admin'] 				        = 'admin/Admin/index';
-$route['admin/menu'] 				    = 'admin/Menu/index';
+$route['admin/message']                 = 'admin/Message/index';
+$route['admin/menu']                    = 'admin/Menu/index';
 $route['admin/submenu'] 			    = 'admin/SubMenu/index';
 $route['admin/role']     			    = 'admin/Role/index';
 $route['admin/user']                 	= 'admin/User_Management/index';
@@ -74,12 +75,13 @@ $route['admin/testimoni']               = 'admin/Testimoni/index';
 $route['home']	        	    =	'home/Home/index';
 $route['about']		            =	'home/Home/about';
 
-$route['rekreasi']		        =	'home/Rekreasi/index';
-$route['rekreasi/(:any)']		=	'home/Rekreasi/detail/$1';
-$route['kuliner']		        =	'home/Kuliner/index';
-$route['kuliner/(:any)']		=	'home/Kuliner/detail/$1';
-$route['artikel']		        =	'home/Artikel/index';
-$route['artikel/(:any)']        =   'home/Artikel/detail/$1';
+$route['rekreasi']                  =    'home/Rekreasi/index';
+$route['rekreasi/(:any)']           =    'home/Rekreasi/detail/$1';
+$route['kuliner']                   =    'home/Kuliner/index';
+$route['kuliner/(:any)']            =    'home/Kuliner/detail/$1';
+$route['artikel']                   =    'home/Artikel/index';
+$route['artikel/kategori/(:any)']   =    'home/Artikel/kategori/$1';
+$route['artikel/(:any)']            =    'home/Artikel/detail/$1';
 
 //
 

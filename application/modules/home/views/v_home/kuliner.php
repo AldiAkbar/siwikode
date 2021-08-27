@@ -46,7 +46,7 @@
                                 <div class="article-header">
                                     <?= $kul['deskripsi']; ?>
                                 </div>
-                                <a href="<?= base_url('kuliner/') . $kul['id']; ?>" class="btn btn-solid-lg btn-promote">Detail</a>
+                                <a href="<?= base_url('kuliner/') . $kul['slug']; ?>" class="btn btn-solid-lg btn-promote">Detail</a>
                             </div>
                         </div>
 

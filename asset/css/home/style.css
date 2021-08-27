@@ -251,7 +251,7 @@ a:hover.back-to-top {
     font-size:16px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 17px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .article-header {
     text-indent: 20px;
@@ -333,6 +333,19 @@ a:hover.back-to-top {
 /*-------------------------------------
         4. Artikel
 --------------------------------------*/
+.category .card {
+    margin-bottom: 80px;
+}
+.category .card .card-img-overlay {
+    background-color: #565a5c;
+}
+.category .card h5 {
+    color: white;
+    margin-top: 10px;
+}
+.category .card h5:hover {
+    color: #0ce20c;
+}
 .blog-content .thumbnail {
     background:transparent;
     border:transparent;

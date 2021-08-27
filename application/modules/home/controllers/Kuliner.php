@@ -28,11 +28,12 @@ class Kuliner extends CI_Controller {
             $this->load->view('layouts/footer');
     }
 
-    public function detail($id) {
+    public function detail($slug)
+    {
         $data['title'] = 'Wisata Kuliner';
         $this->load->model('M_Kuliner');
         $data['user'] = $this->user;
-        $data['kuliner'] = $this->M_Kuliner->getKulinerById($id);
+        $data['kuliner'] = $this->M_Kuliner->getDetailKuliner($slug);
 
         $this->load->view('layouts/header',$data);
 		$this->load->view('layouts/navbar',$data);

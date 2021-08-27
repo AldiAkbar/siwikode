@@ -42,7 +42,7 @@
                                             <div class="filtr-item">
                                                 <img src="<?= base_url('asset/img/rekreasi/') . $r['image']; ?>" alt="portfolio image" />
                                                 <div class="item-title">
-                                                    <a href="<?= base_url('rekreasi/') . $r['id']; ?>">
+                                                    <a href="<?= base_url('rekreasi/') . $r['slug']; ?>">
                                                         <?= $r['name']; ?>
                                                     </a>
                                                 </div><!-- /.item-title -->
@@ -104,7 +104,7 @@
                                         <div class="caption">
                                             <div class="blog-txt">
                                                 <h3>
-                                                    <a href="#">
+                                                    <a href="<?= base_url('artikel/') . $a['slug']; ?>">
                                                         <?= $a['title'] ?>
                                                     </a>
                                                 </h3>
@@ -112,7 +112,7 @@
                                                     <?= $a['preview'] ?>
                                                 </p>
                                                 <div class="about-btn">
-                                                    <a href="<?= base_url() ?>">
+                                                    <a href="<?= base_url('artikel/') . $a['slug']; ?>">
                                                         <button class="about-view packages-btn">
                                                             Details
                                                         </button>
@@ -137,7 +137,7 @@
                     <div class="button-details">
                         <div class="row text-center">
                             <div class="col align-center">
-                                <a href="<?= base_url('rekreasi'); ?>" class="btn btn-solid-lg btn-promote">Lihat Semua</a>
+                                <a href="<?= base_url('artikel'); ?>" class="btn btn-solid-lg btn-promote">Lihat Semua</a>
                             </div>
                         </div>
                     </div>
@@ -197,7 +197,7 @@
                                         </div>
                                         <!--/.packages-review-->
                                         <div class="about-btn">
-                                            <a href="<?= base_url('kuliner/') . $k['id']; ?>">
+                                            <a href="<?= base_url('kuliner/') . $k['slug']; ?>">
                                                 <button class="about-view packages-btn">
                                                     Details
                                                 </button>

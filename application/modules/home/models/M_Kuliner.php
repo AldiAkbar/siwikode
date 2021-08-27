@@ -10,8 +10,9 @@ class M_Kuliner extends CI_Model {
         return $this->db->query($query)->result_array();
     }
 
-    public function getKulinerById($id) {
-        return $this->db->get_where('kuliner', ['id' => $id])->row_array();
+    public function getDetailKuliner($slug)
+    {
+        return $this->db->get_where('kuliner', ['slug' => $slug])->row_array();
     }
 
 }

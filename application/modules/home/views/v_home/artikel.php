@@ -19,6 +19,25 @@
     					Berikut ini informasi - informasi terbaru seputar wisata yang yang ada di Kota Depok.
     				</p>
     			</div>
+
+    			<div class="category">
+    				<div class="row justify-content-center">
+    					<?php foreach ($categories as $category) : ?>
+    						<div class="col-md-4 col-xs-2">
+    							<a href="artikel/kategori/<?= $category['slug'] ?>">
+    								<div class="card">
+    									<a href="<?= base_url('artikel/kategori/') . $category['slug'] ?>">
+    										<div class="card-img-overlay d-flex align-items-center">
+    											<h5 class="card-title text-center flex-fill"><?= $category['kategori'] ?></h5>
+    										</div>
+    									</a>
+    								</div>
+    							</a>
+    						</div>
+    					<?php endforeach; ?>
+    				</div>
+    			</div>
+
     			<!--/.gallery-header-->
     			<div class="blog-content">
     				<div class="row">
@@ -39,7 +58,7 @@
     								<div class="caption">
     									<div class="blog-txt">
     										<h3>
-    											<a href="#">
+    											<a href="<?= base_url('artikel/') . $a['slug']; ?>">
     												<?= $a['title'] ?>
     											</a>
     										</h3>
@@ -47,7 +66,7 @@
     											<?= $a['preview'] ?>
     										</p>
     										<div class="about-btn">
-    											<a href="<?= base_url('artikel/') . $a['id']; ?>">
+    											<a href="<?= base_url('artikel/') . $a['slug']; ?>">
     												<button class="about-view packages-btn">
     													Details
     												</button>

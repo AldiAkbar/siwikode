@@ -47,7 +47,7 @@
                                 <div class="article-header">
                                     <?= $rek['deskripsi']; ?>
                                 </div>
-                                <a href="<?= base_url('rekreasi/') . $rek['id']; ?>" class="btn btn-solid-lg btn-promote">Detail</a>
+                                <a href="<?= base_url('rekreasi/') . $rek['slug']; ?>" class="btn btn-solid-lg btn-promote">Detail</a>
                             </div>
                         </div>
 

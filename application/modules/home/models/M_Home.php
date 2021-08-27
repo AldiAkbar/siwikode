@@ -11,8 +11,13 @@ class M_Home extends CI_Model {
         return $this->db->get('rekreasi')->result_array();
     }
 
-    public function getArtikel() {
-        return $this->db->get('artikel')->result_array();
+    public function getArtikel($kategori_wisata_id = null)
+    {
+        if ($kategori_wisata_id) {
+            return $this->db->get_where('artikel', ['kategori_wisata_id' => $kategori_wisata_id])->result_array();
+        } else {
+            return $this->db->get('artikel')->result_array();
+        }
     }
 
     public function getKuliner() {

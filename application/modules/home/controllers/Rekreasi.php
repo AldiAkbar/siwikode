@@ -29,10 +29,11 @@ class Rekreasi extends CI_Controller {
 		$this->load->view('layouts/footer');
     }
 
-    public function detail($id) {
+    public function detail($slug)
+    {
         $data['title'] = 'Wisata Rekreasi';
         $data['user'] = $this->user;
-        $data['rekreasi'] = $this->M_Rekreasi->getRekreasiById($id);
+        $data['rekreasi'] = $this->M_Rekreasi->getDetailRekreasi($slug);
 
         $this->load->view('layouts/header',$data);
 		$this->load->view('layouts/navbar',$data);

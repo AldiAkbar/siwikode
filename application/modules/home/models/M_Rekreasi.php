@@ -10,8 +10,9 @@ class M_Rekreasi extends CI_Model {
         return $this->db->query($query)->result_array();
     }
 
-    public function getRekreasiById($id) {
-        return $this->db->get_where('rekreasi', ['id' => $id])->row_array();
+    public function getDetailRekreasi($slug)
+    {
+        return $this->db->get_where('rekreasi', ['slug' => $slug])->row_array();
     }
 
 }

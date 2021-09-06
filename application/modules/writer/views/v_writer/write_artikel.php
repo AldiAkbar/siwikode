@@ -50,12 +50,6 @@
                                         </div>
                                         <?= form_error('image', '<small class="text-danger">', '</small>') ?>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="">Preview Artikel</label>
-                                        <textarea id="" name="preview" placeholder="keterangan" class="form-control" style="height: 100px;"></textarea>
-                                        <small class="text-muted">Maksimal 100 huruf</small>
-                                        <?= form_error('preview', '<small class="text-danger">', '</small>') ?>
-                                    </div>
                                 </div>
                             </div>
 
@@ -66,7 +60,8 @@
                                 <div class="card-header bg-primary" style="color: white;">Deskripsi Artikel</div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <textarea id="ckeditor" name="deskripsi" placeholder="deskripsi agenda" class="form-control"></textarea>
+                                        <input id="deskripsi" type="hidden" name="deskripsi">
+                                        <trix-editor input="deskripsi"></trix-editor>
                                         <?= form_error('deskripsi', '<small class="text-danger">', '</small>') ?>
                                     </div>
                                 </div>
@@ -84,4 +79,4 @@
 
         </div><!-- /.container-fluid -->
     </section>
-    <!-- /.content -->`
+    <!-- /.content -->

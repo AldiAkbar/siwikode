@@ -9,7 +9,8 @@ class Artikel extends CI_Controller {
 
         $this->load->model('M_Writer');
         $this->load->model('M_Artikel');
-        $this->load->helper('date');
+        $this->load->helper('text');
+        $this->load->helper('writer');
     }
 
     public function index() {
@@ -23,7 +24,6 @@ class Artikel extends CI_Controller {
         $this->form_validation->set_rules('judul_artikel', 'Title', 'required');
         $this->form_validation->set_rules('kategori', 'Kategori Artikel', 'required');
         $this->form_validation->set_rules('penulis', 'Penulis', 'required');
-        $this->form_validation->set_rules('preview', 'Preview', 'required|max_length[100]');
         $this->form_validation->set_rules('deskripsi', 'Deskripsi', 'required|min_length[250]');
 
         if ($this->form_validation->run() == false) {
@@ -35,13 +35,14 @@ class Artikel extends CI_Controller {
         } else {
             $image = $this->M_Artikel->uploadImage("artikel");
             $data = [
-                'title' => $this->input->post('judul_artikel'),
+                'slug' => create_slug(strtolower($this->input->post('judul_artikel'))),
+                'title' => $this->input->post('judul_artikel', true),
                 'kategori_wisata_id' => $this->input->post('kategori'),
-                'preview' => $this->input->post('preview'),
+                'preview' => word_limiter(strip_tags($this->input->post('deskripsi')), 10),
                 'penulis' => $this->input->post('penulis'),
                 'image' => $image,
                 'date_created' => date('Y-m-d H-i-s'),
-                'detail_artikel' => $this->input->post('deskripsi')
+                'detail_artikel' => $this->input->post('deskripsi', TRUE)
             ];
             // var_dump($data);
             // die;

@@ -9,6 +9,7 @@ class Kuliner extends CI_Controller {
 
         $this->load->model('M_Writer');
         $this->load->model('M_Kuliner');
+        $this->load->helper('writer');
     }
 
     public function index() {
@@ -35,6 +36,7 @@ class Kuliner extends CI_Controller {
         } else {
             $image = $this->M_Kuliner->uploadImage("kuliner");
             $data = [
+                'slug' => create_slug(strtolower($this->input->post('nama_restoran'))),
                 'name' => $this->input->post('nama_restoran'),
                 'image' => $image,
                 'jenis_kuliner_id' => $this->input->post('jenis_restoran'),

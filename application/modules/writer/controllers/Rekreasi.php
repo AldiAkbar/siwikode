@@ -9,6 +9,7 @@ class Rekreasi extends CI_Controller {
 
         $this->load->model('M_Writer');
         $this->load->model('M_Rekreasi');
+        $this->load->helper('writer');
     }
 
     public function index() {
@@ -35,6 +36,7 @@ class Rekreasi extends CI_Controller {
         } else {
             $image = $this->M_Rekreasi->uploadImage("rekreasi");
             $data = [
+                'slug' => create_slug(strtolower($this->input->post('name'))),
                 'name' => $this->input->post('name'),
                 'image' => $image,
                 'jenis_rekreasi_id' => $this->input->post('jenis_rekreasi'),

@@ -73,14 +73,17 @@
 </div>
 <!-- end copyright -->
 
-<script src="<?= base_url() ?>asset/vendor/bootstrap/js/jquery-3.5.1.min.js"></script>
-<script src="<?= base_url() ?>asset/vendor/bootstrap/js/jquery.easing.min.js"></script>
-<script src="<?= base_url() ?>asset/vendor/bootstrap/js/jquery.magnific-popup.js"></script>
-<script src="<?= base_url() ?>asset/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="<?= base_url() ?>asset/vendor/bootstrap/js/owl.carousel.min.js"></script>
+<!-- Bootstrap core JavaScript-->
+<script src="<?= base_url() ?>asset/vendor/sbadmin2/vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url() ?>asset/vendor/sbadmin2/vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Bootsrap -->
+<script src="<?= base_url() ?>asset/vendor/sbadmin2/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- Owl-carousel-->
+<script src="<?= base_url() ?>asset/vendor/owl-carousel/owl.carousel.min.js"></script>
 <!-- sweetalert -->
 <script src="<?= base_url(); ?>asset/vendor/sweetalert2/sweetalert2.all.min.js"></script>
-<script src="<?= base_url() ?>asset/js/home/script.js"></script>
+<!-- custom -->
+<script src="<?= base_url() ?>asset/js/script.js"></script>
 </body>
 
 </html>

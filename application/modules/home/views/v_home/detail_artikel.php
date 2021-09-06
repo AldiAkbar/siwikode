@@ -43,9 +43,7 @@
                         <div class="col-md-6 offset-3">
                             <div class="thumbnail">
                                 <div class="blog-body">
-                                    <p>
-                                        <?= $artikel['detail_artikel']; ?>
-                                    </p>
+                                    <?= $artikel['detail_artikel']; ?>
                                 </div>
                             </div>
                         </div>

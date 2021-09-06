@@ -76,7 +76,8 @@
                                 <div class="card-header bg-primary" style="color: white;">Deskripsi Wisata Rekreasi</div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <textarea id="ckeditor" name="deskripsi" placeholder="deskripsi rekreasi" class="form-control"></textarea>
+                                        <input id="deskripsi" type="hidden" name="deskripsi">
+                                        <trix-editor input="deskripsi"></trix-editor>
                                         <?= form_error('deskripsi', '<small class="text-danger">', '</small>') ?>
                                     </div>
                                 </div>

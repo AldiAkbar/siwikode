@@ -19,9 +19,15 @@
     <link href="<?= base_url() ?>asset/vendor/sbadmin2/css/sb-admin-2.min.css" rel="stylesheet">
     <!-- datatables -->
     <link rel="stylesheet" href="<?= base_url() ?>asset/vendor/sbadmin2/vendor/datatables/dataTables.bootstrap4.min.css">
+    <!-- trix -->
+    <link rel="stylesheet" href="<?= base_url('asset/vendor/trix/trix.css') ?>">
     <!-- icon -->
     <link rel="icon" href="<?= base_url() ?>asset/img/favicon/icon3.ico">
-
+    <style>
+        trix-toolbar [data-trix-button-group='file-tools'] {
+            display: none;
+        }
+    </style>
 </head>
 
 <body id="page-top">

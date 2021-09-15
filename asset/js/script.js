@@ -13,19 +13,6 @@ $(window).on('load', function() {
 	$('.loader-container').fadeOut(2000);
 });
 
-// // page scroll
-// $('.page-scroll').on('click', function(e) { 
-// 	var tujuan = $(this).attr('href');
-// 	var elemenTujuan = $(tujuan);
-
-// 		$('html,body').animate({
-// 			scrollTop:elemenTujuan.offset().top + 20
-// 		}, 600, 'swing');
-
-// 		e.preventDefault();
-
-// });
-
 // navbar script
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {

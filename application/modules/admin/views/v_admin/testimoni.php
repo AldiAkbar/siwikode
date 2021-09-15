@@ -24,7 +24,7 @@
                                         <th scope="col">Nama</th>
                                         <th scope="col">Pekerjaan</th>
                                         <th scope="col">Testimoni</th>
-                                        <th scope="col">Aksi</th>
+                                        <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>

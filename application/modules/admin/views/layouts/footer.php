@@ -48,12 +48,19 @@
             <script src="<?= base_url() ?>asset/vendor/sbadmin2/vendor/datatables/dataTables.bootstrap4.min.js"></script>
             <!-- SBADMIN2 -->
             <script src="<?= base_url() ?>asset/vendor/sbadmin2/js/sb-admin-2.min.js"></script>
+            <!-- trix -->
+            <script src="<?= base_url('asset/vendor/trix/trix.js') ?>"></script>
             <!-- sweetalert -->
             <script src="<?= base_url(); ?>asset/vendor/sweetalert2/sweetalert2.all.min.js"></script>
 
             <script>
+                document.addEventListener('trix-file-accept', function(e) {
+                    e.preventDefault();
+                });
+
                 $(document).ready(function() {
                     $('#example').DataTable();
+                    $('#kategori').DataTable();
                 });
 
                 $('.custom-file-input').on('change', function() {
@@ -81,6 +88,8 @@
 
                 const flashData = $('.flash-data').data('flashdata');
                 let title = $('.flash-data').data('title');
+                const kategori = $('.flashdata').data('kategori');
+                let KategoriTitle = $('.flashdata').data('title');
 
                 if (flashData == 'Login') {
                     Swal({
@@ -92,6 +101,12 @@
                     Swal({
                         title: 'Data ' + title,
                         text: 'Berhasil ' + flashData,
+                        type: 'success'
+                    });
+                } else if (kategori) {
+                    Swal({
+                        title: 'Data ' + KategoriTitle,
+                        text: 'Berhasil ' + kategori,
                         type: 'success'
                     });
                 }

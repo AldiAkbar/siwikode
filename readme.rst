@@ -7,7 +7,7 @@ Library yang digunakan :
 *****************
 - Bootstrap 4
 - SBADMIN2
-- CKEDITOR
+- TRIX
 - Datatables
 - Font-awesome
 - Sweetalert2

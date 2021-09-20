@@ -26,6 +26,17 @@ class M_Rekreasi extends CI_Model {
         return $this->db->query($query)->row_array();
     }
 
+    public function update($id, $data = [])
+    {
+        $this->db->where('id', $id);
+        $this->db->update('rekreasi', $data);
+    }
+
+    public function delete($id)
+    {
+        $this->db->delete('rekreasi', ['id' => $id]);
+    }
+
     public function uploadImage($upload_path, $old_image, $new_image)
     {
         if ($new_image) {

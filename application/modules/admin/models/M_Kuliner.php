@@ -26,6 +26,17 @@ class M_Kuliner extends CI_Model {
         return $this->db->query($query)->row_array();
     }
 
+    public function update($id, $data = [])
+    {
+        $this->db->where('id', $id);
+        $this->db->update('kuliner', $data);
+    }
+
+    public function delete($id)
+    {
+        $this->db->delete('kuliner', ['id' => $id]);
+    }
+
     public function uploadImage($upload_path, $old_image, $new_image)
     {
         if ($new_image) {

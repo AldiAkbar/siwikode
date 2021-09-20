@@ -27,7 +27,7 @@ class Menu extends CI_Controller
             $this->load->view('v_admin/menu', $data);
             $this->load->view('layouts/footer');
         } else {
-            $this->db->insert('user_menu', ['menu' => $this->input->post('menu')]);
+            $this->M_Menu->create($this->input->post('menu'));
             $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/menu');
         }
@@ -45,8 +45,7 @@ class Menu extends CI_Controller
                 'menu' => $menu
             ];
 
-            $this->db->where('id', $id);
-            $this->db->update('user_menu', $data);
+            $this->M_Menu->update($id, $data);
 
             $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/menu');
@@ -54,7 +53,7 @@ class Menu extends CI_Controller
     }
 
     public function deleteMenu($id) {
-        $this->db->delete('user_menu', ['id' => $id]);
+        $this->M_Menu->delete($id);
         $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/menu');
     }

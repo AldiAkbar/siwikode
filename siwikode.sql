@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 27, 2021 at 07:23 PM
+-- Generation Time: Sep 19, 2021 at 06:04 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -44,9 +44,9 @@ CREATE TABLE `artikel` (
 --
 
 INSERT INTO `artikel` (`id`, `slug`, `title`, `kategori_wisata_id`, `preview`, `penulis`, `image`, `date_created`, `detail_artikel`) VALUES
-(1, 'icip-icip-sushi-takarajima-sushi-dan-mix-and-grill-di-depok', 'ICIP-ICIP SUSHI TAKARAJIMA SUSHI DAN MIX AND GRILL DI DEPOK', 2, 'Takarajima Japanese Restaurant namanya. Setiap kali saya ngelewatin tempat ini di tepi Jalan', 'Aldi', 'taka1.jpg', '2021-07-01 06:21:15', '<p>Takarajima Japanese Restaurant namanya. Setiap kali saya dan istri ngelewatin tempat ini di tepi Jalan Margonda Raya, kita selalu pengen dateng dan nyobain makan di sini. Dari penampakannya aja menurut saya udah menarik. Di antara belantara gedung-gedung, mal-mal, dan ruko-ruko, Takarajima ini mengusung konsep bangunan yang lain dari yang lain. Bangunannya hanya berupa rumah satu lantai aja, ga kurang, ga lebih. Rumahnya didesain dengan bentuk yang mengingatkan saya dengan bentuk rumah pedesaan khas Jepang. Apalagi catnya pun makin mengesankan keeleganannya dengan warna hitam yang mendominasi.</p>\r\n\r\n<p> Pas kita akhirnya menyempatkan diri berkunjung ke Takarajima, rupanya di sebelah bangunan rumah yang saya deskripsiin tadi, ada bangunan baru dengan atap segitiga yang terlihat lebih modern. Di sebelah pintu dan jendela kacanya terdapat tulisan “Takarajima Mix & Grill”. Tapi kita masuknya ke Takarajima Japanese Restaurant, interiornya bagus, saya suka karena Jepang banget suasananya. Nah, rupanya, kalo Takarajima Japanese Restaurant lebih berfokus ke bermacam menu sushi, sashimi, dan ramen, Takarajima Mix & Grill lebih menawarkan beragam hidangan sate panggang. Walaupun keduanya merupakan restoran yang berbeda, bahkan ga ada jalan tembusnya dari dalem bangunan, kita boleh kok mesen makanan dari restoran sebelah. Tapi pas bayar jadi agak ribet karena struknya terpisah. </p>\r\n\r\n<p> Ketiga menu sushi yang kita cobain adalah Tornado Roll, Red Dragon Roll, dan Aurora Crispy Roll. Ketiganya kalo ga salah Fay yang milih deh, soalnya dia yang lebih seneng makan sushi ketimbang saya. Saya mah makan sushi apa aja entah kenapa rasanya kok ya sama-sama aja gitu. Tornado Roll berisi potongan daging sapi, shitake, dan saus mentaiko. Red Dragon Roll berisi kulit ikan salmon dengan saus mentaiko. Yang terakhir, Aurora Crispy Roll, berisi tamago (mirip kayak omelet), crabstick, dan tuna aburi. Saya dan Fay sepakat, walaupun tampilannya ciamik, namun belum ada yang bikin lidah kesambet. Fay malahan masih tetep ngerasa sushi-nya Osuushi lebih oke. Mantep lah pokoknya. </p>'),
+(1, 'icip-icip-sushi-takarajima-sushi-dan-mix-and-grill-di-depok', 'ICIP-ICIP SUSHI TAKARAJIMA SUSHI DAN MIX AND GRILL DI DEPOK', 2, 'Takarajima Japanese Restaurant namanya. Setiap kali saya dan istri ngelewatin&#8230;', 'Aldi Akbar', 'taka1.jpg', '2021-09-14 08:21:33', '<div>Takarajima Japanese Restaurant namanya. Setiap kali saya dan istri ngelewatin tempat ini di tepi Jalan Margonda Raya, kita selalu pengen dateng dan nyobain makan di sini. Dari penampakannya aja menurut saya udah menarik. Di antara belantara gedung-gedung, mal-mal, dan ruko-ruko, Takarajima ini mengusung konsep bangunan yang lain dari yang lain. Bangunannya hanya berupa rumah satu lantai aja, ga kurang, ga lebih. Rumahnya didesain dengan bentuk yang mengingatkan saya dengan bentuk rumah pedesaan khas Jepang. Apalagi catnya pun makin mengesankan keeleganannya dengan warna hitam yang mendominasi.<br><br></div><div> Pas kita akhirnya menyempatkan diri berkunjung ke Takarajima, rupanya di sebelah bangunan rumah yang saya deskripsiin tadi, ada bangunan baru dengan atap segitiga yang terlihat lebih modern. Di sebelah pintu dan jendela kacanya terdapat tulisan “Takarajima Mix & Grill”. Tapi kita masuknya ke Takarajima Japanese Restaurant, interiornya bagus, saya suka karena Jepang banget suasananya. Nah, rupanya, kalo Takarajima Japanese Restaurant lebih berfokus ke bermacam menu sushi, sashimi, dan ramen, Takarajima Mix & Grill lebih menawarkan beragam hidangan sate panggang. Walaupun keduanya merupakan restoran yang berbeda, bahkan ga ada jalan tembusnya dari dalem bangunan, kita boleh kok mesen makanan dari restoran sebelah. Tapi pas bayar jadi agak ribet karena struknya terpisah. <br><br></div><div> Ketiga menu sushi yang kita cobain adalah Tornado Roll, Red Dragon Roll, dan Aurora Crispy Roll. Ketiganya kalo ga salah Fay yang milih deh, soalnya dia yang lebih seneng makan sushi ketimbang saya. Saya mah makan sushi apa aja entah kenapa rasanya kok ya sama-sama aja gitu. Tornado Roll berisi potongan daging sapi, shitake, dan saus mentaiko. Red Dragon Roll berisi kulit ikan salmon dengan saus mentaiko. Yang terakhir, Aurora Crispy Roll, berisi tamago (mirip kayak omelet), crabstick, dan tuna aburi. Saya dan Fay sepakat, walaupun tampilannya ciamik, namun belum ada yang bikin lidah kesambet. Fay malahan masih tetep ngerasa sushi-nya Osuushi lebih oke. Mantep lah pokoknya. <br><br></div>'),
 (2, 'sejarah-panjang-pembangunan-masjid-kubah-emas-di-depok', 'Sejarah Panjang Pembangunan Masjid Kubah Emas di Depok', 1, 'Pendiri Masjid Dian Al Mahri atau dikenal Masjid Kubah Emas di Depok, Jawa Barat, Dian Djuriah Rais', 'Admin', 'mas.jpg', '2021-07-06 07:18:11', '<p> Pendiri Masjid Dian Al Mahri atau dikenal Masjid Kubah Emas di Depok, Jawa Barat, Dian Djuriah Rais tutup usia, Jumat (29/3/2019). Dian adalah sosok di balik bangunan ikonik di Depok ini. </p>\r\n\r\n<p> Menurut skripsi karya Mirza Shahrani, Fakultas Teknik Universitas Indonesia, 2008, \"Masjid Kubah Emas di Depok: Fenomena Reproduksi Masjid Kawasan Timur Tengah Dalam Konteks Indonesia\", Dian merupakan pengusaha asal Banten yang lahir pada 1953.</p>\r\n\r\n<p> Usaha Dian ada banyak, salah satunya di bidang properti yang dirintis sejak 1980. Ia lebih banyak menjalankan usaha di Singapura, Malaysia, dan Arab Saudi. </p>\r\n\r\n<p> Selain terkenal sebagai pengusaha sukses, Dian juga terkenal sebagai seorang dermawan yang gemar membantu anak yatim piatu dan membangun masjid sebagai bentuk ibadah. Tercatat kurang lebih ada 1.000 masjid yang dibangun Dian tersebar di Indonesia. </p>\r\n\r\n<p> Dian disebutkan membangun masjid berdasarkan spontanitas. Saat jalan-jalan ke suatu daerah dan melihat masyarakat membutuhkan masjid, secara spontan Dian akan membantu pembangunan masjid di daerah tersebut.  Salah satu yang paling terkenal adalah Masjid Dian Al Mahri yang dibangun pada 2001 dan selesai pada 2006. Masjid Dian Al Mahri dengan luas 8.000 meter persegi berdiri di lahan seluas 70 hektar, membuatnya menjadi masjid dengan lahan terluas di Jabodetabek. </p>\r\n\r\n<p> Dian berharap Masjid Kubah Emas menjadi kawasan terpadu yang memfasilitasi kebutuhan umat Islam akan sarana ibadah, dakwah, pendidikan, dan sosial yang menyatu dalam kawasan Islamic Center Dian Al Mahri. </p>'),
-(3, 'aladin-waterpark-depok-bangkrut-ribuan-orang-kehilangan-pekerjaan', 'Aladin Waterpark Depok Bangkrut, Ribuan Orang Kehilangan Pekerjaan', 1, 'Taman rekreasi air Depok Fantasi Waterpark atau yang dikenal Aladin Waterpark akhirnya ditutup.', 'Writer', 'renang.jpg', '2021-06-25 12:22:06', '<p> DEPOK – Taman rekreasi air Depok Fantasi Waterpark atau yang dikenal Aladin Waterpark akhirnya ditutup. Gedung taman rekreasi itu, kini sudah rata dengan tanah. Hanya menyisakan satu unit bangunan mini di bagian depan. </p>\r\n\r\n<p> Setelah ditelusuri, ternyata bangunan yang disisakan masih berfungsi sebagai tempat penyediaan mesin Anjungan Tunai Mandiri (ATM). Sejumlah security terlihat sedang berjaga-jaga di bagian depan gedung itu. </p>\r\n\r\n<p> “Kalau mulai tutupnya sih sejak pandemi (Covid-19), ya sekitar satu tahun terakhir lah,” ungkap Rahmat salah satu pedagang kaki lima yang ditemui di area sebelah kanan gedung eks Depok Fantasi Waterpark, Sabtu (27/2). </p>\r\n\r\n<p> Sementara menurut Arman, 54, yang juga pemilik kios kelontong di dekat Waterpark Aladin, bangunan rekreasi itu mulai dibongkar sejak 2 minggu terakhir. </p>\r\n\r\n<p> “Kurang lebih 2 minggu terakhir dilakukan pembongkaran,” ujar Arman. </p>\r\n\r\n<p> Sama, Arman juga menyebut alasan ditutupnya tempat wisata air itu lantaran terkena dampak Covid-19. </p>');
+(3, 'aladin-waterpark-depok-bangkrut--ribuan-orang-kehilangan-pekerjaan', 'Aladin Waterpark Depok Bangkrut, Ribuan Orang Kehilangan Pekerjaan', 1, '&nbsp;DEPOK – Taman rekreasi air Depok Fantasi Waterpark atau yang&#8230;', 'Writer', 'renang.jpg', '2021-09-14 10:10:48', '<div> <strong>DEPOK </strong>– Taman rekreasi air Depok Fantasi Waterpark atau yang dikenal Aladin Waterpark akhirnya ditutup. Gedung taman rekreasi itu, kini sudah rata dengan tanah. Hanya menyisakan satu unit bangunan mini di bagian depan. <br><br></div><div> Setelah ditelusuri, ternyata bangunan yang disisakan masih berfungsi sebagai tempat penyediaan mesin Anjungan Tunai Mandiri (ATM). Sejumlah security terlihat sedang berjaga-jaga di bagian depan gedung itu. <br><br></div><div> “Kalau mulai tutupnya sih sejak pandemi (Covid-19), ya sekitar satu tahun terakhir lah,” ungkap Rahmat salah satu pedagang kaki lima yang ditemui di area sebelah kanan gedung eks Depok Fantasi Waterpark, Sabtu (27/2). <br><br></div><div> Sementara menurut Arman, 54, yang juga pemilik kios kelontong di dekat Waterpark Aladin, bangunan rekreasi itu mulai dibongkar sejak 2 minggu terakhir. <br><br></div><div> “Kurang lebih 2 minggu terakhir dilakukan pembongkaran,” ujar Arman. <br><br></div><div> Sama, Arman juga menyebut alasan ditutupnya tempat wisata air itu lantaran terkena dampak Covid-19. <br><br></div>');
 
 -- --------------------------------------------------------
 
@@ -99,17 +99,20 @@ INSERT INTO `jenis_rekreasi` (`id`, `jenis`) VALUES
 CREATE TABLE `kategori_wisata` (
   `id` int(11) NOT NULL,
   `kategori` varchar(50) NOT NULL,
-  `slug` varchar(100) NOT NULL,
-  `image` varchar(50) NOT NULL
+  `slug` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `kategori_wisata`
 --
 
-INSERT INTO `kategori_wisata` (`id`, `kategori`, `slug`, `image`) VALUES
-(1, 'Wisata Rekreasi', 'wisata-rekreasi', 'rekreasi2.jpg'),
-(2, 'Wisata Kuliner', 'wisata-kuliner', 'kuliner2.jpg');
+INSERT INTO `kategori_wisata` (`id`, `kategori`, `slug`) VALUES
+(1, 'Wisata Rekreasi', 'wisata-rekreasi'),
+(2, 'Wisata Kuliner', 'wisata-kuliner'),
+(10, 'Wisata Alam Gaib', 'wisata-alam-gaib'),
+(15, 'Wisata Alam', 'wisata-alam'),
+(16, 'Wisata Alam Gaib nan Menyeramkan nan Menggairahkan', 'wisata-alam-gaib-nan-menyeramkan-nan-menggairahkan'),
+(17, 'Wisata Alam Gaib nan Menyeramkan nan Menggairahkan', 'wisata-alam-gaib-nan-menyeramkan-nan-menggairahkan');
 
 -- --------------------------------------------------------
 
@@ -158,12 +161,13 @@ CREATE TABLE `kuliner` (
 --
 
 INSERT INTO `kuliner` (`id`, `slug`, `name`, `image`, `jenis_kuliner_id`, `menu`, `price`, `address`, `time_open`, `deskripsi`) VALUES
-(1, 'takarajima', 'Takarajima', 'taka1.jpg', 1, 'Sushi, Sashimi, Shabu - shabu, Ramen, Udon, Bento, Donburi, Tonkatsu dan lain - lain.', '20.000 - 50.000 per porsi', 'Jalan Mangonda Raya, Beji, Depok.', '10.00 WIB - 22.00 WIB', 'Desain dari restoran ini bernuansa Jepang, ditambah suasana yang nyaman dan tenang membuat siapapun orang ingin singgah di tempat ini. Dengan menu unggulan seperti sushi, ramen, bento, donburi hingga shabu - shabu tersedia di restoran ini. Harga yang ditetapkan di restoran ini untuk setiap porsi cukup murah dan terjangkau.'),
+(1, 'takarajima', 'Takarajima', 'taka1.jpg', 1, 'Sushi, Sashimi, Shabu - shabu, Ramen, Udon, Bento, Donburi, Tonkatsu dan lain - lain.', '20.000 - 50.000 per porsi', 'Jalan Mangonda Raya, Beji, Depok Baru, Jakarta Selatan.', '10.00 WIB - 00.00 WIB', '<div>Desain dari restoran ini bernuansa Jepang, ditambah suasana yang nyaman dan tenang membuat siapapun orang ingin singgah di tempat ini. Dengan menu unggulan seperti sushi, ramen, bento, donburi hingga shabu - shabu tersedia di restoran ini. Harga yang ditetapkan di restoran ini untuk setiap porsi cukup murah dan terjangkau.</div>'),
 (2, 'whats-up-cafe', 'What\'s Up Cafe', 'up1.jpg', 2, 'Indomie Carbonara, Indomie Ramen, Indomie Tomyum, Indomie Burger Steak, Nasi Goreng Lada Hitam, Aneka min', '20.000 - 50.000 per porsi', 'Jalan Margonda Raya No.463, Beji, Depok', '10.00 WIB - 22.00 WIB', 'Restoran ini memiliki tagline \"The Next Level of Indomie\" yang mengisyaratkan bahwa menu utama di restoran ini merupakan indomie. Banyak varian menu indomie yang tidak biasa seperti indomie carbonara, indomie tomyum seafood dan lainnya. Namun, jangan khawatir bagi kalian yang tidak suka dengan indomie bisa mencoba menu lain seperti nasi goreng lada hitam, nasi goreng mercon, dan lain - lain.'),
 (3, 'saung-talaga', 'Saung Talaga', 'saung1.jpg', 1, 'Ikan Gurame Goreng / Bakar, Sop Iga Sapi, Sate Ayam/Sapi/Kambing, Aneka gorengan dan Aneka minuman.', '20.000 - 50.000 per porsi', 'Jl. Raya Sawangan No.1, Rangkapan Jaya, Kec. Pancoran Mas, Kota Depok, Jawa Barat 16435', '10.00 - 21.00 WIB', 'Kalau mau makan sajian khas Sunda dan Jawa di Depok, tempat ini cocok didatangi, apalagi bersama keluarga. Ada ikan gurame goreng dan karedok yang pedas nonjok. Dekat dengan Jakarta, Depok, ternyata punya tempat makan yang bisa disambangi bersama keluarga. Tempatnya sangat terkenal bagi warga Depok. Karena bernuansa asri dan menawarkan beragam sajian tradisional. Terdapat kolam ikan dan beberapa saung di pinggirnya yang dulunya sebuah telaga, bernama Telaga Subur.'),
 (4, 'fat-bubble', 'Fat Bubble', 'fat1.jpg', 2, 'Fat Q Ball, Rice Bowl, Roti Bakar, Es Cincau, Es Krim Teh Hijau, serta aneka dessert lainnya.', '20.000 - 50.000 per porsi', 'Jl. Margonda Raya No.238, Kemiri Muka, Beji, Depok City, West Java 16423', '10.00 - 21.00 WIB', 'Tempat ini menyajikan berbagai <i>dessert</i> atau hidangan pencuci mulut yang pastinya sayang banget kalo dilewatkan begitu saja. Karena menu utama disini merupakan <i>dessert,</i> jadi jangan berharap ada makanan berat dijual disini. Tempat ini didesain dengan konsep yang sangat ceria, sehingga sangat cocok buat kalian yang ingin sekedar nongkrong bersama teman atau sahabat ramai - ramai. Tempat ini bisa makan ditempat, pesanan secara online maupun pesanan untuk dibawa pulang'),
 (5, 'roti-bakar-eddy', 'Roti Bakar Eddy', 'roti.jpg', 2, 'roti bakar keju, coklat, kacang, srikaya keju, stroberi keju, sate taicha, pempek dan lain - lain.', '20.000 - 50.000 per orang', 'Jl. Margonda Raya No.2, RW.12, Kemiri Muka, Kecamatan Beji, Kota Depok, Jawa Barat 16424', '07.00 - 02.00 WIB', 'Berbagai macam roti bakar yang benar - benar garing siap disajikan ke meja kalian jika datang kesini. Mulai dari roti bakar keju, coklat, kacang, srikaya keju, stroberi keju dan masih banyak lagi. Bagi kalian yang mungkin tidak terlalu suka dengan roti, mungkin kalian bisa menyoba menu lainnya seperti pisang bakar coklat keju, bubur ayam, mie goreng, dan berbagai minuman hangat ataupun dingin. Tempat ini bisa makan ditempat, pesanan secara online maupun pesanan untuk dibawa pulang.'),
-(6, 'es-pocong', 'Es Pocong', 'es.jpg', 2, 'es pocong, es kolor ijo, nasi tuyul, lontong setan, kuntilanak, black magic dan masih banyak lagi.', '20.000 - 50.000 per orang', 'Jl. Margonda Raya No.476, Pondok Cina, Kecamatan Beji, Kota Depok, Jawa Barat 16424', '10.00 - 22.00 WIB', 'Dilihat dari nama toko dan menunya saja sudah terlihat bahwa makanan dan minuman yang ada disini bertemakan horror. Ditambah topping yang digunakan di makanan dan minuman menambah kesan horror yang sudah ada di nama hidangannya. Namun, rasanya tetap enak dan tidak mengandung unsur horror sama sekali. Tempat ini memiliki akses jalan yang cukup sulit karena berada di gang kecil. Namun, pengunjung tetap antusias untuk datang dan mencoba rasa dari es pocong ini.');
+(6, 'es-pocong', 'Es Pocong', 'es.jpg', 2, 'es pocong, es kolor ijo, nasi tuyul, lontong setan, kuntilanak, black magic dan masih banyak lagi.', '20.000 - 50.000 per orang', 'Jl. Margonda Raya No.476, Pondok Cina, Kecamatan Beji, Kota Depok, Jawa Barat 16424', '10.00 - 22.00 WIB', '<div>Dilihat dari nama toko dan menunya saja sudah terlihat bahwa makanan dan minuman yang ada disini bertemakan horror. Ditambah topping yang digunakan di makanan dan minuman menambah kesan horror yang sudah ada di nama hidangannya. Namun, rasanya tetap enak dan tidak mengandung unsur horror sama sekali. Tempat ini memiliki akses jalan yang cukup sulit karena berada di gang kecil. Namun, pengunjung tetap antusias untuk datang dan mencoba rasa dari es pocong ini diubah.</div>'),
+(11, 'restoran-2', 'Restoran 2', 'Screenshot_20170822-094457.png', 1, 'sate ayam, sate ayam, sate ayam, sate ayam, sate ayam, sate ayam,', '20.000 - 30.000 per porsi', 'Jl. Pemuda No. 9 RW 01 RT 03', '10.00 - 21.00 WIB', '<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aliquid corporis odio tempore commodi laboriosam iure assumenda quibusdam debitis error voluptates voluptatem rerum, libero quidem, est minima at eos. Iusto illo minus esse! Consequuntur nam, voluptas repudiandae voluptatem sed iure eligendi dolore, aliquid, ipsam quis quae velit magnam asperiores pariatur diubah.</div>');
 
 -- --------------------------------------------------------
 
@@ -183,8 +187,7 @@ CREATE TABLE `message` (
 --
 
 INSERT INTO `message` (`id`, `nama`, `email`, `pesan`) VALUES
-(1, 'Aldi Akbar', 'aldiakbar373@gmail.com', 'test1'),
-(2, 'Aldi Akbar', 'aldiakbar363@gmail.com', 'test2');
+(1, 'Aldi Akbar', 'aldiakbar373@gmail.com', 'test1');
 
 -- --------------------------------------------------------
 
@@ -238,7 +241,8 @@ INSERT INTO `rekreasi` (`id`, `slug`, `name`, `image`, `jenis_rekreasi_id`, `fac
 (2, 'depok-fantasy-water-park', 'Depok Fantasy Water Park', 'renang.jpg', 5, 'wahana waterpark, foodcourt, gazebo, panggung, hiburan serta fasilitas lainnya.', 'Jalan Boulevard Grand Depok City, Depok 16412.', '40.000 - 70.000 per orang', '07.00 WIB - 17.00 WIB', 'Waterpark ini salah satu tempat rekreasi air pertama dan terbesar yang berada di kawasan Grand Depok City, Kota Depok. Waterpark yang memiliki tema dan bernuansa Negeri 1001 malam dengan berbagai permainan air yang seru buat keluarga. Banyak wahana seru yang bisa dicoba baik untuk anak-anak maupun dewasa. Esthatic Tower, Giant Slide, Waterplay, Kiddy Pool, adalah beberapa wahana yang bisa dimainkan.'),
 (3, 'masjid-kubah-emas', 'Masjid Kubah Emas', 'mas.jpg', 2, 'tempat sholat dan berwudhu, peralatan sholat, toko makanan dan butik.', 'Jl. Raya Meruyung, Meruyung, Kec. Limo, Kota Depok, Jawa Barat', 'Free (Belum termasuk tiket parkir)', ' 00.00 WIB - 22.00 WIB', 'Masjid Kubah Emas atau Masjid Dian Al Mahri diresmikan pada Desember 2006 ini memang terinspirasi dari gaya arsitektur Timur Tengah. Masjid ini tidak hanya bisa menjadi tempat bagi umat muslim untuk beribadah, tetapi juga bisa dijadikan sebagai tempat untuk sekedar berkeliling bersama keluarga ataupun sekedar untuk berfoto. Namun, jangan dilupakan bahwa fungsi utama masjid ini yaitu menjadi tempat ibadah bagi kaum muslim.'),
 (4, 'dkandang-amazing-farm', 'D\'Kandang Amazing Farm', 'kandang.jpg', 1, 'wahana yang berhubungan dengan hewan peternakan, ada wahana permainan, wahana kreasi, spot foto menarik dan restoran.', 'Jalan Penarikan (Perum PGRI), RT 07 RW 02, Kelurahan Pasir Putih, Kecamatan Sawangan, Kota Depok, Ja', '20.000 - 40.000 per orang', '08.00-16.00 WIB dan Minggu 06.00 WIB-16.00 WIB', 'Berwisata sambil menuntut ilmu kerap dilakukan orang tua ketika mengajak anak-anak mereka untuk berlibur. Objek wisata ini mengambil konsep wisata edukatif dengan tema pertanian dan peternakan. Di D’Kandang Amazing Farm, para pengunjung tidak hanya akan melihat bagaimana susu sapi diperah, tetapi juga ikut merasakan memerah susu sapi dan mendapatkan pengetahuan menarik lainnya. Selain itu, ada keseruan menarik lainnya, seperti menanam tanaman hias, bercocok tanam, hingga melakukan pencangkokan.'),
-(5, 'taman-bunga-wiladatika', 'Taman Bunga Wiladatika', 'taman.jpg', 3, 'Taman Bunga, Kolam Renang, Hiburan anak - anak, Outbound, Gazebo, Gedung Pertemuan dan berbagai fasilitas umum lainnya.', 'Jalan Jambore 1 Cibubur/Cimanggis, Depok, Jawa Barat.', 'Umum 15.000 dan Kegiatan Pramuka 5.000', '08.00 - 16.00 WIB ', 'Taman Bunga Wiladatika menjadi salah satu referensi wisata warga Depok dan sekitarnya. Disekeliling diberikan pemandangan berbagai macam bunga yang sangat memanjakan mata para pengunjung. Nama taman ini merupakan singkatan dari Widya Mandala Krida Bakti Pramuka. Awalnya dibangun sebagai sarana dan sumber pendanaan aktivitas Pramuka. Taman ini sangat cocok bagi anda yang ingin sekedar bersantai atau mengajak anak bermain di taman ini juga cukup menyenangkan.');
+(5, 'taman-bunga-wiladatika', 'Taman Bunga Wiladatika', 'taman.jpg', 3, 'Taman Bunga, Kolam Renang, Hiburan anak - anak, Outbound, Gazebo, Gedung Pertemuan dan berbagai fasilitas umum lainnya.', 'Jalan Jambore 1 Cibubur/Cimanggis, Depok, Jawa Barat.', 'Umum 15.000 dan Kegiatan Pramuka 5.000', '08.00 - 16.00 WIB ', 'Taman Bunga Wiladatika menjadi salah satu referensi wisata warga Depok dan sekitarnya. Disekeliling diberikan pemandangan berbagai macam bunga yang sangat memanjakan mata para pengunjung. Nama taman ini merupakan singkatan dari Widya Mandala Krida Bakti Pramuka. Awalnya dibangun sebagai sarana dan sumber pendanaan aktivitas Pramuka. Taman ini sangat cocok bagi anda yang ingin sekedar bersantai atau mengajak anak bermain di taman ini juga cukup menyenangkan.'),
+(8, 'taman-bermain-anak-besar', 'Taman Bermain Anak Besar', 'Screenshot_20170822-095659.png', 3, 'wc putra, wc putri, taman, gazebo, dll.', 'Jl. Pemuda No. 9 RW 01 RT 03', '10.000 - 15.000 per orang', '15.00 - 24.00 WIB', '<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente aliquid corporis odio tempore commodi laboriosam iure assumenda quibusdam debitis error voluptates voluptatem rerum, libero quidem, est minima at eos. Iusto illo minus esse! Consequuntur nam, voluptas repudiandae voluptatem sed iure eligendi dolore, aliquid, ipsam quis quae velit magnam asperiores pariatur.</div>');
 
 -- --------------------------------------------------------
 
@@ -416,7 +420,7 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 (12, 2, 'Change Password', 'user/changePassword', 'fas fa-fw fa-key', 1),
 (13, 1, 'User Management', 'admin/User_Management', 'fas fa-fw fa-users', 1),
 (16, 3, 'Profile Writer', 'writer', 'fas fa-fw fa-user-circle', 1),
-(17, 2, 'Write Article', 'writer/artikel', 'fas fa-fw fa-book', 1),
+(17, 3, 'Write Article', 'writer/artikel', 'fas fa-fw fa-book', 1),
 (19, 1, 'Article Management', 'admin/artikel', 'fas fa-fw fa-book', 1),
 (20, 1, 'Kuliner Management', 'admin/kuliner', 'fas fa-fw fa-utensils', 1),
 (21, 3, 'Write Kuliner', 'writer/kuliner', 'fas fa-fw fa-drumstick-bite', 1),
@@ -454,7 +458,8 @@ INSERT INTO `user_token` (`id`, `email`, `token`, `date_created`) VALUES
 --
 ALTER TABLE `artikel`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `slug` (`slug`);
+  ADD UNIQUE KEY `slug` (`slug`),
+  ADD KEY `artikel_ibfk_1` (`kategori_wisata_id`);
 
 --
 -- Indexes for table `jenis_kuliner`
@@ -570,7 +575,7 @@ ALTER TABLE `user_token`
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `jenis_kuliner`
@@ -588,7 +593,7 @@ ALTER TABLE `jenis_rekreasi`
 -- AUTO_INCREMENT for table `kategori_wisata`
 --
 ALTER TABLE `kategori_wisata`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `kontributor`
@@ -600,7 +605,7 @@ ALTER TABLE `kontributor`
 -- AUTO_INCREMENT for table `kuliner`
 --
 ALTER TABLE `kuliner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `message`
@@ -618,7 +623,7 @@ ALTER TABLE `nav_home`
 -- AUTO_INCREMENT for table `rekreasi`
 --
 ALTER TABLE `rekreasi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `testimoni`
@@ -682,7 +687,7 @@ ALTER TABLE `user_token`
 -- Constraints for table `artikel`
 --
 ALTER TABLE `artikel`
-  ADD CONSTRAINT `artikel_ibfk_1` FOREIGN KEY (`kategori_wisata_id`) REFERENCES `kategori_wisata` (`id`);
+  ADD CONSTRAINT `artikel_ibfk_1` FOREIGN KEY (`kategori_wisata_id`) REFERENCES `kategori_wisata` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `kuliner`

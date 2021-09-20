@@ -24,7 +24,7 @@ class Role extends CI_Controller {
             $this->load->view('v_admin/role', $data);
             $this->load->view('layouts/footer');
         } else {
-            $this->db->insert('user_role', ['role' => $this->input->post('role')]);
+            $this->M_Role->create(['role' => $this->input->post('role')]);
             $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/role');
         }
@@ -42,16 +42,14 @@ class Role extends CI_Controller {
                 'role'  => $role
             ];
 
-            $this->db->where('id', $id);
-            $this->db->update('user_role', $data);
-
+            $this->M_Role->update($id, $data);
             $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/role');
         }
     }
 
     public function deleteRole($id) {
-        $this->db->delete('user_role', ['id' => $id]);
+        $this->M_Role->delete($id);
         $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/role');
         
@@ -83,12 +81,12 @@ class Role extends CI_Controller {
             'menu_id' => $menu_id
         ];
 
-        $result = $this->db->get_where('user_access_menu', $data);
+        $result = $this->M_Role->getAccessMenu($data);
 
         if ($result->num_rows() < 1) {
-            $this->db->insert('user_access_menu', $data);
+            $this->M_Role->createAccess($data);
         } else {
-            $this->db->delete('user_access_menu', $data);
+            $this->M_Role->deleteAccess($data);
         }
 
         $this->session->set_flashdata('message', 'Diubah');

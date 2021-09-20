@@ -20,36 +20,11 @@ class Kuliner extends CI_Controller {
         $data['kuliner'] = $this->M_Kuliner->getKuliner();
         $data['jenis_kuliner'] = $this->M_Kuliner->getJenisKuliner();
 
-        $this->form_validation->set_rules('name', 'Nama Kuliner', 'required');
-        $this->form_validation->set_rules('jenis_kuliner', 'Jenis Kuliner', 'required');
-        $this->form_validation->set_rules('menu', 'Menu', 'required');
-        $this->form_validation->set_rules('price', 'Harga', 'required');
-        $this->form_validation->set_rules('time_open', 'Waktu Buka', 'required');
-
-        if ($this->form_validation->run() == false) {
-            $this->load->view('layouts/header', $data);
-            $this->load->view('layouts/sidebar', $data);
-            $this->load->view('layouts/topbar', $data);
-            $this->load->view('v_admin/kuliner', $data);
-            $this->load->view('layouts/footer');
-        } else {
-            $id = $this->input->post('id');
-            $data = [
-                'id' => $id,
-                'name' => $this->input->post('name'),
-                'jenis_kuliner_id' => $this->input->post('jenis_kuliner'),
-                'menu' => $this->input->post('menu'),
-                'price' => $this->input->post('price'),
-                'time_open' => $this->input->post('time_open'),
-            ];
-            // var_dump($data);
-            // die;
-
-            $this->db->where('id', $id);
-            $this->db->update('kuliner', $data);
-            $this->session->set_flashdata('message', 'Diubah');
-            redirect('admin/kuliner');
-        }
+        $this->load->view('layouts/header', $data);
+        $this->load->view('layouts/sidebar', $data);
+        $this->load->view('layouts/topbar', $data);
+        $this->load->view('v_admin/kuliner', $data);
+        $this->load->view('layouts/footer');
 
     }
 
@@ -105,11 +80,7 @@ class Kuliner extends CI_Controller {
                 'deskripsi' => $this->input->post('deskripsi')
             ];
 
-            // var_dump($data);
-            // die();
-
-            $this->db->where('id', $id);
-            $this->db->update('kuliner', $data);
+            $this->M_Kuliner->update($id, $data);
 
             $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/kuliner');
@@ -119,7 +90,7 @@ class Kuliner extends CI_Controller {
     public function delete($id) {
         $old_image = $this->M_Kuliner->getImageKuliner($id);
         unlink("asset/img/kuliner/" . $old_image['image']);
-        $this->db->delete('kuliner', ['id' => $id]);
+        $this->M_Kuliner->delete($id);
 
         $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/kuliner');

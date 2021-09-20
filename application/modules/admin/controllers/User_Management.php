@@ -42,7 +42,7 @@ class User_Management extends CI_Controller {
                 'date_created' => time()
             ];
 
-            $this->db->insert('user', $data);
+            $this->M_User->create($data);
             $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/user');
         }
@@ -62,11 +62,9 @@ class User_Management extends CI_Controller {
             'password' => $password,
             'role_id' => $this->input->post('role_id'),
             'is_active' => $this->input->post('is_active'),
-        ]; 
+        ];
 
-        $this->db->where('id', $id);
-        $this->db->update('user', $data);
-
+        $this->M_User->update($id, $data);
         $this->session->set_flashdata('message', 'Diubah');
         redirect('admin/user');
     }
@@ -75,7 +73,7 @@ class User_Management extends CI_Controller {
         $old_image = $this->M_User->getImageUser($id);
         unlink("asset/img/profile/" . $old_image['image']);
 
-        $this->db->delete('user', ['id'=>$id]);
+        $this->M_User->delete($id);
         $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/user');
     }

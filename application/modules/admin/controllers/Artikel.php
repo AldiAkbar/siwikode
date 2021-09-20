@@ -75,11 +75,7 @@ class Artikel extends CI_Controller {
                 'detail_artikel' => $this->input->post('deskripsi', TRUE)
             ];
 
-            // var_dump($data);
-            // die();
-
-            $this->db->where('id', $id);
-            $this->db->update('artikel', $data);
+            $this->M_Artikel->update($id, $data);
 
             $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/artikel');
@@ -89,7 +85,8 @@ class Artikel extends CI_Controller {
     public function delete($id) {
         $old_image = $this->M_Artikel->getImageArtikel($id);
         unlink("asset/img/artikel/" . $old_image['image']);
-        $this->db->delete('artikel', ['id' => $id]);
+        $this->M_Artikel->delete($id);
+
 
         $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/artikel');
@@ -102,7 +99,7 @@ class Artikel extends CI_Controller {
             'slug' => create_slug(strtolower($this->input->post('kategori_artikel')))
         ];
 
-        $this->db->insert('kategori_wisata', $data);
+        $this->M_Artikel->createKategori($data);
         $this->session->set_flashdata('kategori', 'Ditambahkan');
         redirect('admin/artikel');
     }
@@ -116,15 +113,14 @@ class Artikel extends CI_Controller {
             'slug' => create_slug(strtolower($this->input->post('kategori_artikel')))
         ];
 
-        $this->db->where('id', $id);
-        $this->db->update('kategori_wisata', $data);
+        $this->M_Artikel->updateKategori($id, $data);
         $this->session->set_flashdata('kategori', 'Diubah');
         redirect('admin/artikel');
     }
 
     public function delete_kategori($id)
     {
-        $this->db->delete('kategori_wisata', ['id' => $id]);
+        $this->M_Artikel->deleteKategori($id);
         $this->session->set_flashdata('kategori', 'Dihapus');
         redirect('admin/artikel');
     }

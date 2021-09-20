@@ -8,4 +8,9 @@ class M_Message extends CI_Model
     {
         return $this->db->get('message')->result_array();
     }
+
+    public function delete($id)
+    {
+        $this->db->delete('message', ['id' => $id]);
+    }
 }

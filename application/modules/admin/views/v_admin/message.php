@@ -34,7 +34,6 @@
                                             <td><?= $m['email'];  ?></td>
                                             <td><?= $m['pesan'];  ?></td>
                                             <td>
-                                                <a href="<?= base_url('admin/message/view/' . $m['id']); ?>" class="badge badge-secondary">View</a>
                                                 <a href="<?= base_url('admin/message/delete/' . $m['id']); ?>" class="badge badge-danger tombol-hapus">Delete</a>
                                             </td>
                                         </tr>

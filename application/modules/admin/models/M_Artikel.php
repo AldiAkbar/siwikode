@@ -27,6 +27,33 @@ class M_Artikel extends CI_Model {
         return $this->db->query($query)->row_array();
     }
 
+    public function update($id, $data = [])
+    {
+        $this->db->where('id', $id);
+        $this->db->update('artikel', $data);
+    }
+
+    public function delete($id)
+    {
+        $this->db->delete('artikel', ['id' => $id]);
+    }
+
+    public function createKategori($data = [])
+    {
+        $this->db->insert('kategori_wisata', $data);
+    }
+
+    public function updateKategori($id, $data = [])
+    {
+        $this->db->where('id', $id);
+        $this->db->update('kategori_wisata', $data);
+    }
+
+    public function deleteKategori($id)
+    {
+        $this->db->delete('kategori_wisata', ['id' => $id]);
+    }
+
     public function uploadImage($upload_path, $old_image, $new_image)
     {
         if ($new_image) {

@@ -18,4 +18,20 @@ class M_User extends CI_Model {
         return $this->db->query($query)->row_array();
     }
 
+    public function create($data = [])
+    {
+        $this->db->insert('user', $data);
+    }
+
+    public function update($id, $data = [])
+    {
+        $this->db->where('id', $id);
+        $this->db->update('user', $data);
+    }
+
+    public function delete($id)
+    {
+        $this->db->delete('user', ['id' => $id]);
+    }
+
 }

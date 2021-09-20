@@ -38,7 +38,7 @@ class SubMenu extends CI_Controller {
                 'is_active' => $this->input->post('is_active')
             ];
 
-            $this->db->insert('user_sub_menu', $data);
+            $this->M_Menu->createSUbMenu($data);
             $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/SubMenu');
         }
@@ -64,16 +64,14 @@ class SubMenu extends CI_Controller {
                 'is_active' => $this->input->post('is_active')
             ];
 
-            $this->db->where('id', $id);
-            $this->db->update('user_sub_menu', $data);
-
+            $this->M_Menu->updateSubMenu($id, $data);
             $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/SubMenu');
         }
     }
 
     public function deleteSubMenu($id) {
-        $this->db->delete('user_sub_menu', ['id' => $id]);
+        $this->M_Menu->deleteSubMenu($id);
         $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/SubMenu');
     }

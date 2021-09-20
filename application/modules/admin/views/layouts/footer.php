@@ -52,12 +52,7 @@
             <script src="<?= base_url('asset/vendor/trix/trix.js') ?>"></script>
             <!-- sweetalert -->
             <script src="<?= base_url(); ?>asset/vendor/sweetalert2/sweetalert2.all.min.js"></script>
-
             <script>
-                document.addEventListener('trix-file-accept', function(e) {
-                    e.preventDefault();
-                });
-
                 $(document).ready(function() {
                     $('#example').DataTable();
                     $('#kategori').DataTable();

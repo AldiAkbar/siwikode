@@ -53,7 +53,7 @@ class Testimoni extends CI_Controller
             // var_dump($data);
             // die;
 
-            $this->db->insert('testimoni', $data);
+            $this->M_Testimoni->create($data);
             $this->session->set_flashdata('message', 'Ditambah');
             redirect('admin/testimoni');
         }
@@ -97,11 +97,8 @@ class Testimoni extends CI_Controller
                 'description' => $this->input->post('description'),
                 'image' => $image
             ];
-            // var_dump($data);
-            // die;
 
-            $this->db->where('id', $id);
-            $this->db->update('testimoni', $data);
+            $this->M_Testimoni->update($id, $data);
             $this->session->set_flashdata('message', 'Diubah');
             redirect('admin/testimoni');
         }
@@ -112,7 +109,7 @@ class Testimoni extends CI_Controller
         $old_image = $this->M_Testimoni->getImageTestimoni($id);
         unlink("asset/img/testimoni/" . $old_image['image']);
 
-        $this->db->delete('testimoni', ['id' => $id]);
+        $this->M_Testimoni->delete($id);
         $this->session->set_flashdata('message', 'Dihapus');
         redirect('admin/testimoni');
     }
